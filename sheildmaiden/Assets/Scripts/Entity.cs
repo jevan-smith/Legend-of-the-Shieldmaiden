@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class Entity : MonoBehaviour 
 {
+    private Rigidbody2D body;
 
 	/// <summary>
 	/// The Entity's movement speed
@@ -22,7 +23,8 @@ public abstract class Entity : MonoBehaviour
 	protected virtual void Start () 
 	{
 		animator = GetComponent<Animator> ();
-	}
+        body = GetComponent<Rigidbody2D>();
+    }
 	
 	// Update is called once per frame
 	protected virtual void Update () 
@@ -32,9 +34,11 @@ public abstract class Entity : MonoBehaviour
 
 	public void Move()
 	{
-		transform.Translate (direction*speed*Time.deltaTime);
+        //transform.Translate (direction*speed*Time.deltaTime);
+        body.MovePosition(new Vector2((transform.position.x + direction.x * speed),
+               transform.position.y + direction.y * speed));
 
-		if (direction.x != 0 || direction.y != 0) 
+        if (direction.x != 0 || direction.y != 0) 
 		{
 			AnimateMovement (direction);
 		}
@@ -47,7 +51,8 @@ public abstract class Entity : MonoBehaviour
 
 	public void AnimateMovement(Vector2 direction)
 	{
-		animator.SetLayerWeight (1, 1);
+
+        animator.SetLayerWeight (1, 1);
 
 		animator.SetFloat ("x", direction.x);
 		animator.SetFloat ("y", direction.y);
