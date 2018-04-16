@@ -12,7 +12,7 @@ public abstract class Entity : MonoBehaviour
 	[SerializeField]
 	private float speed;
 
-	private Animator animator;
+	protected Animator animator;
 
 	/// <summary>
 	/// The Entity's direction
@@ -46,8 +46,9 @@ public abstract class Entity : MonoBehaviour
 		{
 			animator.SetLayerWeight (1, 0);
 		}
-			
-	}
+
+
+    }
 
 	public void AnimateMovement(Vector2 direction)
 	{
@@ -56,6 +57,16 @@ public abstract class Entity : MonoBehaviour
 
 		animator.SetFloat ("x", direction.x);
 		animator.SetFloat ("y", direction.y);
-	}
 
+    }
+
+    public void ActivateLayer(string layerName)
+    {
+        for (int i = 0; i < animator.layerCount; i++)
+        {
+            animator.SetLayerWeight(i, 0);
+        }
+
+        animator.SetLayerWeight(animator.GetLayerIndex(layerName), 1);
+    }
 }
