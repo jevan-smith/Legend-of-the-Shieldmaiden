@@ -50,20 +50,20 @@ public abstract class Entity : MonoBehaviour
     }
 
     public void Move()
-	{
+	{ 
         body.velocity = direction.normalized * speed;
     }
 
     public void HandleLayers()
     {
-        if (IsMoving)
+        if (IsMoving && !isAttacking)
         {
             ActivateLayer("walkLayer");
 
             animator.SetFloat("x", direction.x);
             animator.SetFloat("y", direction.y);
 
-            StopAttack();
+            //StopAttack();
         }
         else if (isAttacking)
         {
