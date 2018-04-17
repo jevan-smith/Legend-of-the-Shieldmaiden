@@ -14,10 +14,22 @@ public abstract class Entity : MonoBehaviour
 
 	protected Animator animator;
 
+    protected Coroutine attackRoutine;
+
 	/// <summary>
 	/// The Entity's direction
 	/// </summary>
 	protected Vector2 direction;
+
+    protected bool isAttacking = false;
+
+    public bool IsMoving
+    {
+        get
+        {
+            return direction.x != 0 || direction.y != 0;
+        }
+    }
 
 	// Use this for initialization
 	protected virtual void Start () 
@@ -29,36 +41,40 @@ public abstract class Entity : MonoBehaviour
 	// Update is called once per frame
 	protected virtual void Update () 
 	{
-		Move ();
+        HandleLayers();
 	}
 
-	public void Move()
-	{
-        //transform.Translate (direction*speed*Time.deltaTime);
-        body.MovePosition(new Vector2((transform.position.x + direction.x * speed),
-               transform.position.y + direction.y * speed));
-
-        if (direction.x != 0 || direction.y != 0) 
-		{
-			AnimateMovement (direction);
-		}
-		else 
-		{
-			animator.SetLayerWeight (1, 0);
-		}
-
-
+    private void FixedUpdate()
+    {
+        Move();
     }
 
-	public void AnimateMovement(Vector2 direction)
+    public void Move()
 	{
-
-        animator.SetLayerWeight (1, 1);
-
-		animator.SetFloat ("x", direction.x);
-		animator.SetFloat ("y", direction.y);
-
+        body.velocity = direction.normalized * speed;
     }
+
+    public void HandleLayers()
+    {
+        if (IsMoving)
+        {
+            ActivateLayer("walkLayer");
+
+            animator.SetFloat("x", direction.x);
+            animator.SetFloat("y", direction.y);
+
+            StopAttack();
+        }
+        else if (isAttacking)
+        {
+            ActivateLayer("attackLayer");
+        }
+        else
+        {
+            ActivateLayer("idleLayer");
+        }
+    }
+
 
     public void ActivateLayer(string layerName)
     {
@@ -68,5 +84,16 @@ public abstract class Entity : MonoBehaviour
         }
 
         animator.SetLayerWeight(animator.GetLayerIndex(layerName), 1);
+    }
+
+    public void StopAttack()
+    {
+        if (attackRoutine != null)
+        {
+            StopCoroutine(attackRoutine);
+            isAttacking = false;
+            animator.SetBool("attack", isAttacking);
+        }
+        isAttacking = false;
     }
 }

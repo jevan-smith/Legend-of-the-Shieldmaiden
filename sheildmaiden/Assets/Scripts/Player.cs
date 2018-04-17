@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Player : Entity {
 
-    //protected Animator myAnimator;
-    protected bool isAttacking = false;
-
 	// Use this for initialization
 	protected override void Start () 
 	{
@@ -44,42 +41,27 @@ public class Player : Entity {
         if (Input.GetKeyDown(KeyCode.J))
         {
 
-            isAttacking = true;
-            StartCoroutine(Attack());
+            attackRoutine = StartCoroutine(Attack());
 
         }
     }
 
     private IEnumerator Attack()
     {
-        if (isAttacking)
+        if (!isAttacking && !IsMoving)
         {
-            ActivateLayer("attackLayer");
+
+            isAttacking = true;
+
+            animator.SetBool("attack", isAttacking);
+
+            yield return new WaitForSeconds(0.25F);
+
+            Debug.Log("attack was a success");
+
+            StopAttack();
         }
 
-
-        animator.SetBool("attack", true);
-
-        
-
-        yield return new WaitForSeconds(0.001F);
-
-        
-
-        Debug.Log("attack");
-
-
-
-        stopAttack();
-
-
-    }
-
-    public void stopAttack()
-    {
-        isAttacking = false;
-        animator.SetBool("attack", false);
-       
     }
 
 }
