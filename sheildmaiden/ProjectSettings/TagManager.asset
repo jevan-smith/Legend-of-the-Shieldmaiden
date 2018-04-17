@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Demo Enemy
+  - weapon
   layers:
   - Default
   - TransparentFX
