@@ -24,10 +24,10 @@ public class On_Hit : MonoBehaviour {
     {
         if (other.tag == "Weapon")//Checks for weapon hit
         {
-            if (this.transform.parent.GetComponent<SkelyAI>().curr_hp != 0)
+            if (this.transform.parent.GetComponent<SkelyAI>().curr_hp != 0)//gets variable from main script
             {
 
-                this.transform.parent.GetComponent<SkelyAI>().curr_hp -= 2;
+                this.transform.parent.GetComponent<SkelyAI>().curr_hp -= 2;//changes variable from parent object
             }
 
         }

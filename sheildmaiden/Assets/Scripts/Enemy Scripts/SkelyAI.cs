@@ -16,8 +16,10 @@ public class SkelyAI : MonoBehaviour
     private Animator motion;//Gives access to animator component
 
     /* **Health** */
+    private float dissolve;
     public int max_hp;
     public int curr_hp;
+    private bool dead;
 
 
     // Use this for initialization
@@ -33,8 +35,10 @@ public class SkelyAI : MonoBehaviour
         motion = GetComponent<Animator>();
 
         //hp
-        max_hp = 10;
-        curr_hp = 10;
+        dissolve = 200 * Time.deltaTime;// Time until object will be deleted upon death
+        max_hp = 10;//Enemy max hp
+        curr_hp = 10;//current hp
+        dead = false;//is it dead?
 
     }
 
@@ -42,7 +46,7 @@ public class SkelyAI : MonoBehaviour
     void Update()
     {
         //Moves enemy towards patrol node at set speed
-        if (target == null)
+        if (target == null && !dead)
         {
             SetDir(CurrNode.position.x);//Sets direction before move
             transform.position = Vector2.MoveTowards(transform.position, CurrNode.position, speed * Time.deltaTime);
@@ -64,17 +68,26 @@ public class SkelyAI : MonoBehaviour
             }
 
         }
-        if (target != null) //Will move to player if detected
+        if (target != null && !dead) //Will move to player if detected
         {
             SetDir(target.position.x);//Sets direction before move 
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             
         }
 
+        //if hp is <= 0 start death animation, dead==true, start dissolve timer, destroy enemy object
         if(curr_hp <= 0)
         {
             motion.SetBool("Dead", true);
-            //*****Make code to destroy game object******
+            dead = true;
+            if (dissolve > 0)
+            {
+                dissolve -= Time.deltaTime;
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
         }
 
     }
