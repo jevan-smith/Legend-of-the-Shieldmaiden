@@ -15,6 +15,10 @@ public class SkelyAI : MonoBehaviour
     /* **Animation Section** */
     private Animator motion;//Gives access to animator component
 
+    /* **Health** */
+    public int max_hp;
+    public int curr_hp;
+
 
     // Use this for initialization
     void Start()
@@ -27,6 +31,10 @@ public class SkelyAI : MonoBehaviour
 
         //Animation Initialization
         motion = GetComponent<Animator>();
+
+        //hp
+        max_hp = 10;
+        curr_hp = 10;
 
     }
 
@@ -61,6 +69,12 @@ public class SkelyAI : MonoBehaviour
             SetDir(target.position.x);//Sets direction before move 
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             
+        }
+
+        if(curr_hp <= 0)
+        {
+            motion.SetBool("Dead", true);
+            //*****Make code to destroy game object******
         }
 
     }
