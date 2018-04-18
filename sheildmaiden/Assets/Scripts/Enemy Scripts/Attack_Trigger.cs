@@ -19,7 +19,8 @@ public class Attack_Trigger : MonoBehaviour {
         if (other.tag == "Player")//Checks for PLayer
         {
 
-            motion.SetBool("Attack", true);
+            //motion.SetBool("Attack", true);
+            StartCoroutine(pauseAction());
         }
 
     }
@@ -29,5 +30,12 @@ public class Attack_Trigger : MonoBehaviour {
     {
         motion.SetBool("Attack", false);
 
+    }
+
+    private IEnumerator pauseAction()
+    {
+        motion.SetBool("Attack", true);
+        yield return new WaitForSeconds(1);
+        motion.SetBool("Attack", false);
     }
 }

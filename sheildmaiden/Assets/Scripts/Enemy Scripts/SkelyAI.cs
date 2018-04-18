@@ -88,7 +88,7 @@ public class SkelyAI : MonoBehaviour
 
         }
 
-        if (target != null && !dead) //Will move to player if detected
+        if (target != null && !dead && !blink) //Will move to player if detected
         {
             SetDir(target.position.x);//Sets direction before move 
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
