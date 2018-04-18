@@ -21,6 +21,8 @@ public class SkelyAI : MonoBehaviour
     public int curr_hp;
     private bool dead;
 
+    public bool IsAttacking;
+
 
     // Use this for initialization
     void Start()
@@ -40,39 +42,44 @@ public class SkelyAI : MonoBehaviour
         curr_hp = 10;//current hp
         dead = false;//is it dead?
 
+        IsAttacking = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Moves enemy towards patrol node at set speed
-        if (target == null && !dead)
+        if (!IsAttacking)
         {
-            SetDir(CurrNode.position.x);//Sets direction before move
-            transform.position = Vector2.MoveTowards(transform.position, CurrNode.position, speed * Time.deltaTime);
-            
-            //Check if Patrol Node reached
-            if (Vector2.Distance(transform.position, CurrNode.position) == 0)
+            //Moves enemy towards patrol node at set speed
+            if (target == null && !dead)
             {
-                //Have reached Patrol Node - get next else start over
-                if (CurrIndex + 1 < patrolnodes.Length)
+                SetDir(CurrNode.position.x);//Sets direction before move
+                transform.position = Vector2.MoveTowards(transform.position, CurrNode.position, speed * Time.deltaTime);
+
+                //Check if Patrol Node reached
+                if (Vector2.Distance(transform.position, CurrNode.position) == 0)
                 {
-                    CurrIndex++;
+                    //Have reached Patrol Node - get next else start over
+                    if (CurrIndex + 1 < patrolnodes.Length)
+                    {
+                        CurrIndex++;
+                    }
+                    else
+                    {
+                        CurrIndex = 0;
+                    }
+                    CurrNode = patrolnodes[CurrIndex];
+
                 }
-                else
-                {
-                    CurrIndex = 0;
-                }
-                CurrNode = patrolnodes[CurrIndex];
 
             }
+            if (target != null && !dead) //Will move to player if detected
+            {
+                SetDir(target.position.x);//Sets direction before move 
+                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
-        }
-        if (target != null && !dead) //Will move to player if detected
-        {
-            SetDir(target.position.x);//Sets direction before move 
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-            
+            }
         }
 
         //if hp is <= 0 start death animation, dead==true, start dissolve timer, destroy enemy object

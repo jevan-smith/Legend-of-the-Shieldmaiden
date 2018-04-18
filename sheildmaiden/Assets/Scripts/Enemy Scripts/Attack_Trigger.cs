@@ -18,7 +18,7 @@ public class Attack_Trigger : MonoBehaviour {
     {
         if (other.tag == "Player")//Checks for PLayer
         {
-
+            this.transform.parent.GetComponent<SkelyAI>().IsAttacking = true;
             motion.SetBool("Attack", true);
         }
 
@@ -27,6 +27,7 @@ public class Attack_Trigger : MonoBehaviour {
     // Checks for Player exit of circle collider
     private void OnTriggerExit2D(Collider2D other)
     {
+        this.transform.parent.GetComponent<SkelyAI>().IsAttacking = false;
         motion.SetBool("Attack", false);
 
     }
