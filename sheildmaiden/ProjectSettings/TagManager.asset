@@ -5,7 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Demo Enemy
+<<<<<<< HEAD
   - Weapon
+=======
+  - weapon
+>>>>>>> master
   layers:
   - Default
   - TransparentFX
