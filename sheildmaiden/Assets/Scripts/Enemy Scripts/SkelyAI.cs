@@ -24,11 +24,15 @@ public class SkelyAI : MonoBehaviour
     public int curr_hp;
     private bool dead;
 
+    /* Is Attacking? */
+    [HideInInspector]
+    public bool attacking;
+
     [HideInInspector]
     public SpriteRenderer spriteR;
 
     [HideInInspector]
-    public bool blink = false; // if tree enemy will flash a color
+    public bool blink = false; // if true enemy will flash a color
 
 
     private SpriteRenderer myRenderer;
@@ -55,6 +59,9 @@ public class SkelyAI : MonoBehaviour
         curr_hp = 10;//current hp
         dead = false;//is it dead?
 
+        //attacking?
+        attacking = false;
+
         myRenderer = gameObject.GetComponent<SpriteRenderer>();
         shaderGUItext = Shader.Find("GUI/Text Shader");
         shaderSpritesDefault = Shader.Find("Sprites/Default"); // or whatever
@@ -64,49 +71,52 @@ public class SkelyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Moves enemy towards patrol node at set speed
-        if (target == null && !dead)
+        if (!attacking)//If not attacking(attackin==false) do movement stuff below
         {
-            SetDir(CurrNode.position.x);//Sets direction before move
-            transform.position = Vector2.MoveTowards(transform.position, CurrNode.position, speed * Time.deltaTime);
-
-            //Check if Patrol Node reached
-            if (Vector2.Distance(transform.position, CurrNode.position) == 0)
+            //Moves enemy towards patrol node at set speed if not dead
+            if (target == null && !dead)
             {
-                //Have reached Patrol Node - get next else start over
-                if (CurrIndex + 1 < patrolnodes.Length)
+                SetDir(CurrNode.position.x);//Sets direction before move
+                transform.position = Vector2.MoveTowards(transform.position, CurrNode.position, speed * Time.deltaTime);
+
+                //Check if Patrol Node reached
+                if (Vector2.Distance(transform.position, CurrNode.position) == 0)
                 {
-                    CurrIndex++;
+                    //Have reached Patrol Node - get next else start over
+                    if (CurrIndex + 1 < patrolnodes.Length)
+                    {
+                        CurrIndex++;
+                    }
+                    else
+                    {
+                        CurrIndex = 0;
+                    }
+                    CurrNode = patrolnodes[CurrIndex];
+
                 }
-                else
-                {
-                    CurrIndex = 0;
-                }
-                CurrNode = patrolnodes[CurrIndex];
 
             }
 
-        }
+            if (target != null && !dead && !blink) //Will move to player if detected and not dead
+            {
+                SetDir(target.position.x);//Sets direction before move 
+                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
-        if (target != null && !dead && !blink) //Will move to player if detected
-        {
-            SetDir(target.position.x);//Sets direction before move 
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-
+            }
         }
 
         //if hp is <= 0 start death animation, dead==true, start dissolve timer, destroy enemy object
         if (curr_hp <= 0)
         {
-            motion.SetBool("Dead", true);
-            dead = true;
-            if (dissolve > 0)
+            motion.SetBool("Dead", true);//Starts death animation
+            dead = true;//Stops the movement of Enemy Game Object
+            if (dissolve > 0)//checks if dissolve timer has time left
             {
-                dissolve -= Time.deltaTime;
+                dissolve -= Time.deltaTime;//subtracts time
             }
             else
             {
-                Destroy(this.gameObject);
+                Destroy(this.gameObject);//Time <= 0 game object is destroyed
             }
         }
 
