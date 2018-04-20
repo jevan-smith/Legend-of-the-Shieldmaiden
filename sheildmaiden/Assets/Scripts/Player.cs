@@ -7,7 +7,7 @@ public class Player : Entity {
 
 
 
-    public int Player_Health = 10;
+    public int Player_Health = 8;
     public int Player_Damage = 2;
 
     SpriteRenderer m_SpriteRenderer;
@@ -107,6 +107,7 @@ public class Player : Entity {
             {
 
                 Player_Health -= GameObject.Find("Demo Enemy").GetComponent<SkelyAI>().damage;
+                GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth = Player_Health;
 
                 blink = true;
                 if (blink == true)
