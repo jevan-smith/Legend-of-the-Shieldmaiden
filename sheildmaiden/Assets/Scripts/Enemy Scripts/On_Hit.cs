@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class On_Hit : MonoBehaviour
 {
-    public SkelyAI trying;
+
 
     // Use this for initialization
     void Start ()
     {
-
+        
     }
 
 	
@@ -26,7 +26,7 @@ public class On_Hit : MonoBehaviour
         {
             if (this.transform.parent.GetComponent<SkelyAI>().curr_hp != 0)//gets variable from main script
             {
-                this.transform.parent.GetComponent<SkelyAI>().curr_hp -= 2;//changes variable from parent object
+                this.transform.parent.GetComponent<SkelyAI>().curr_hp -= GameObject.Find("Player").GetComponent<Player>().Player_Damage;//changes variable from parent object
                 this.transform.parent.GetComponent<SkelyAI>().blink = true;
             }
         }

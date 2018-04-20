@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Demo Enemy
   - Weapon
+  - Enemy_Hit
   layers:
   - Default
   - TransparentFX

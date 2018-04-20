@@ -1,19 +1,51 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Entity {
 
-	// Use this for initialization
-	protected override void Start () 
+
+
+    public int Player_Health = 10;
+    public int Player_Damage = 2;
+
+    SpriteRenderer m_SpriteRenderer;
+    Color m_NewColor;
+    
+
+    [HideInInspector]
+    public bool blink = false; // if true enemy will flash a color
+
+    [HideInInspector]
+    public SpriteRenderer spriteR;
+
+    private SpriteRenderer myRenderer;
+    private Shader shaderGUItext;
+    private Shader shaderSpritesDefault;
+
+    // Use this for initialization
+    protected override void Start () 
 	{
-		base.Start ();
-	}
+
+        spriteR = gameObject.GetComponent<SpriteRenderer>();
+        base.Start ();
+
+        myRenderer = gameObject.GetComponent<SpriteRenderer>();
+        shaderGUItext = Shader.Find("GUI/Text Shader");
+        shaderSpritesDefault = Shader.Find("Sprites/Default"); // or whatever
+    }
 	
 	// Update is called once per frame
 	protected override void Update () 
 	{
-		GetInput ();
+        if (Player_Health == 0)
+        {
+            Destroy(this.gameObject);
+            SceneManager.LoadScene("mainScene");
+        }
+
+        GetInput ();
 
 		base.Update ();
 	}
@@ -65,6 +97,50 @@ public class Player : Entity {
             StopAttack();
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Enemy_Hit") //Checks for weapon hit
+        {
+            if (Player_Health != 0)
+            {
+
+                Player_Health -= GameObject.Find("Demo Enemy").GetComponent<SkelyAI>().damage;
+
+                blink = true;
+                if (blink == true)
+                {
+                    StartCoroutine(blinking());
+                }
+            }    
+
+        }
+    }
+
+
+    void whiteSprite()
+    {
+        myRenderer.material.shader = shaderGUItext;
+        myRenderer.color = Color.white;
+    }
+
+    void normalSprite()
+    {
+        myRenderer.material.shader = shaderSpritesDefault;
+        myRenderer.color = Color.white;
+    }
+
+    public IEnumerator blinking()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            whiteSprite();
+            yield return new WaitForSeconds(.05f);
+            normalSprite();
+            yield return new WaitForSeconds(.05f);
+        }
+        blink = false;
     }
 
 }

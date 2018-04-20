@@ -5,9 +5,10 @@ using UnityEngine;
 public class SkelyAI : MonoBehaviour
 {
 
-
     public Transform[] patrolnodes;//Number and object set in unity
+    [HideInInspector]
     public float speed;//Set in Unity
+    [HideInInspector]
     public float run_speed;//Speed when playeris detected
     Transform CurrNode;//Node That the enemy will move to
     int CurrIndex;//Number that CurrNode is listed as in patrolnodes array
@@ -19,9 +20,14 @@ public class SkelyAI : MonoBehaviour
     private Animator motion;//Gives access to animator component
 
     /* **Health** */
+    [HideInInspector]
     private float dissolve;
+ 
     public int max_hp;
     public int curr_hp;
+    public int damage = 1;
+
+    [HideInInspector]
     private bool dead;
 
     /* Is Attacking? */
