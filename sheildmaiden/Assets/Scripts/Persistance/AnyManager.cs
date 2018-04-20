@@ -8,6 +8,7 @@ public class AnyManager : MonoBehaviour
 {
 
     public static AnyManager anyManager;
+	public int level_to_load = 1;
 
     bool gameStart;
 
@@ -17,7 +18,7 @@ public class AnyManager : MonoBehaviour
         {
             anyManager = this;
 
-            SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
+			SceneManager.LoadSceneAsync(level_to_load, LoadSceneMode.Additive);
 
             gameStart = true;
         }
