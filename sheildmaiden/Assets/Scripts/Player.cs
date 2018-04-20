@@ -41,8 +41,9 @@ public class Player : Entity {
 	{
         if (Player_Health == 0)
         {
-            Destroy(this.gameObject);
-            SceneManager.LoadScene("mainScene");
+            //Destroy(this.gameObject);
+            //SceneManager.LoadScene("mainScene");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         GetInput ();
@@ -92,7 +93,7 @@ public class Player : Entity {
 
             yield return new WaitForSeconds(0.25F);
 
-            Debug.Log("attack was a success");
+            //Debug.Log("attack was a success");
 
             StopAttack();
         }
@@ -106,8 +107,9 @@ public class Player : Entity {
             if (Player_Health != 0)
             {
 
-                Player_Health -= GameObject.Find("Demo Enemy").GetComponent<SkelyAI>().damage;
-                GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth = Player_Health;
+                //Player_Health -= GameObject.Find("Demo Enemy").GetComponent<SkelyAI>().damage;
+                GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth -= GameObject.Find("Demo Enemy").GetComponent<SkelyAI>().damage;
+                Player_Health = GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth;
 
                 blink = true;
                 if (blink == true)
