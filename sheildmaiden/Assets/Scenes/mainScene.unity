@@ -20699,8 +20699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ff5a40a737ecb46b95961b4530c501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_to_load: 2
-  scene_to_unload: 1
+  scene_to_load: 1
+  scene_to_unload: 0
   unloaded: 0
 --- !u!58 &1408766169
 CircleCollider2D:

@@ -10,14 +10,14 @@ public class Change_Level : MonoBehaviour
     public int scene_to_unload;
 
     [HideInInspector]
-    public bool unloaded;
+    public bool unloaded = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
 
-            SceneManager.LoadSceneAsync(scene_to_load, LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(scene_to_load);
         }
         if (!unloaded)
         {
