@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class Change_Level : MonoBehaviour
 {
 
-    public int scene_to_load;
-    public int scene_to_unload;
+    public string scene_to_load;
+    public string scene_to_unload;
 
     [HideInInspector]
     public bool unloaded = false;
@@ -17,7 +17,7 @@ public class Change_Level : MonoBehaviour
         if (other.tag == "Player")
         {
 
-            SceneManager.LoadSceneAsync(scene_to_load);
+            SceneManager.LoadSceneAsync(scene_to_load, LoadSceneMode.Additive);
         }
         if (!unloaded)
         {

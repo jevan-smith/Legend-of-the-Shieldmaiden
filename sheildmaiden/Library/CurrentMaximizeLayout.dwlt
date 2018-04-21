@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 779, y: 492}
   m_MaxSize: {x: 16004, y: 14042}
   vertical: 0
-  controlID: 6254
+  controlID: 80
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -46,8 +46,8 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 1451
-    y: 100
+    x: 1006
+    y: 108
     width: 506
     height: 542
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 504, y: 492}
   m_MaxSize: {x: 12004, y: 14042}
   vertical: 1
-  controlID: 6255
+  controlID: 81
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 504, y: 221}
   m_MaxSize: {x: 12004, y: 4021}
   vertical: 0
-  controlID: 6256
+  controlID: 82
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -197,16 +197,16 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 654
-    y: 100
+    x: 209
+    y: 108
     width: 247
     height: 542
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6abbffff
-    m_LastClickedID: -17558
-    m_ExpandedIDs: d072fdff748cfdffbadbfdff1221feff4085feff66bbffff68bbffff6abbffff00000000cc5a0000005b000072620000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 9afbffff9cfbffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -278,8 +278,8 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 905
-    y: 100
+    x: 460
+    y: 108
     width: 542
     height: 542
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -382,8 +382,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1451
-    y: 100
+    x: 1006
+    y: 108
     width: 506
     height: 542
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -515,8 +515,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 654
-    y: 663
+    x: 209
+    y: 671
     width: 1303
     height: 347
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -532,19 +532,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Sounds
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sounds
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Admin\Documents\GitHub\Legend-of-the-Sheildmaiden\sheildmaiden
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: bc520000
-    m_LastClickedID: 21180
-    m_ExpandedIDs: 000000000c500000125000000c51000024510000545100005c5100007e51000000ca9a3bffffff7f
+    m_SelectedIDs: ae2b0000
+    m_LastClickedID: 11182
+    m_ExpandedIDs: 000000009c270000c8270000ae2b0000882c0000c635000074360000cc37000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -572,7 +572,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000c500000125000000c51000024510000545100005c5100007e51000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000009c270000c8270000ae2b0000882c0000c635000074360000cc370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -597,8 +597,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 6abbffff
-    m_LastClickedInstanceID: -17558
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000004300000
     m_RenameOverlay:
@@ -719,12 +719,8 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: ecc9679f0da3c4ecb9fcb9bbf9084636,
-    type: 2}
-  m_BreadCrumbs:
-  - m_Target: {fileID: 1107189524018579202, guid: ecc9679f0da3c4ecb9fcb9bbf9084636,
-      type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
+  m_AnimatorController: {fileID: 0}
+  m_BreadCrumbs: []
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -782,8 +778,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1961
-    y: 100
+    x: 1516
+    y: 108
     width: 332
     height: 910
   m_PersistentViewDataDictionary: {fileID: 0}

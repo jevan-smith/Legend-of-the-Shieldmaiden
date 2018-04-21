@@ -20630,7 +20630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f1517459a8b3ca418e8d0e51dc1f25e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
 --- !u!212 &1408766166
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20699,8 +20698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ff5a40a737ecb46b95961b4530c501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_to_load: 1
-  scene_to_unload: 0
+  scene_to_load: level2
+  scene_to_unload: mainScene
   unloaded: 0
 --- !u!58 &1408766169
 CircleCollider2D:

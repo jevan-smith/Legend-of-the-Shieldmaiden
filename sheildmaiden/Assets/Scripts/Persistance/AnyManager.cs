@@ -8,7 +8,7 @@ public class AnyManager : MonoBehaviour
 {
 
     public static AnyManager anyManager;
-	public int level_to_load = 1;
+	public string level_to_load = "mainScene";
 
     bool gameStart;
 
@@ -24,12 +24,12 @@ public class AnyManager : MonoBehaviour
         }
     }
 
-    public void UnloadScene(int scene)
+    public void UnloadScene(string scene)
     {
         StartCoroutine(Unload(scene));
     }
 
-    IEnumerator Unload(int scene)
+    IEnumerator Unload(string scene)
     {
         yield return null;
 
