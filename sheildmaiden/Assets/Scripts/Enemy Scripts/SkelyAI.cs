@@ -5,6 +5,7 @@ using UnityEngine;
 public class SkelyAI : MonoBehaviour
 {
 
+
     public Transform[] patrolnodes;//Number and object set in unity
     [HideInInspector]
     public float speed;//Set in Unity
@@ -13,8 +14,6 @@ public class SkelyAI : MonoBehaviour
     Transform CurrNode;//Node That the enemy will move to
     int CurrIndex;//Number that CurrNode is listed as in patrolnodes array
     private Transform target;//Player position
-
-   
 
     /* **Animation Section** */
     private Animator motion;//Gives access to animator component
@@ -28,6 +27,9 @@ public class SkelyAI : MonoBehaviour
     public int damage = 1;
 
     [HideInInspector]
+    public bool hit_sound = false;
+
+    [HideInInspector]
     private bool dead;
 
     /* Is Attacking? */
@@ -36,6 +38,9 @@ public class SkelyAI : MonoBehaviour
 
     [HideInInspector]
     public SpriteRenderer spriteR;
+
+    [HideInInspector]
+    public AudioSource sound;
 
     [HideInInspector]
     public bool blink = false; // if true enemy will flash a color
@@ -48,6 +53,7 @@ public class SkelyAI : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        sound = GetComponent<AudioSource>();
         spriteR = gameObject.GetComponent<SpriteRenderer>(); 
 
         //At start first node is set
@@ -77,6 +83,7 @@ public class SkelyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (!attacking)//If not attacking(attackin==false) do movement stuff below
         {
             //Moves enemy towards patrol node at set speed if not dead
@@ -124,11 +131,17 @@ public class SkelyAI : MonoBehaviour
             {
                 Destroy(this.gameObject);//Time <= 0 game object is destroyed
             }
+
         }
 
         if (blink == true)
         {
             StartCoroutine(turnRed());
+        }
+        if (hit_sound == true)
+        {
+            sound.Play();
+            hit_sound = false;
         }
 
     }

@@ -24,9 +24,17 @@ public class Player : Entity {
     private Shader shaderGUItext;
     private Shader shaderSpritesDefault;
 
+    [HideInInspector]
+    public AudioSource sound;
+
+    [HideInInspector]
+    public bool hit_sound = false;
+
     // Use this for initialization
     protected override void Start () 
 	{
+
+        sound = GetComponent<AudioSource>();
 
         spriteR = gameObject.GetComponent<SpriteRenderer>();
         base.Start ();
@@ -115,6 +123,12 @@ public class Player : Entity {
                 if (blink == true)
                 {
                     StartCoroutine(blinking());
+                }
+                hit_sound = true;
+                if (hit_sound == true)
+                {
+                    sound.Play();
+                    hit_sound = false;
                 }
             }    
 

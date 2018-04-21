@@ -5,6 +5,6 @@ sceneSetups:
 - path: Assets/Scenes/level2.unity
   isLoaded: 0
   isActive: 0
-- path: Assets/Scripts/NeverUnload.unity
+- path: Assets/Scenes/NeverUnload.unity
   isLoaded: 1
   isActive: 1
