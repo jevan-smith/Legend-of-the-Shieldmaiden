@@ -16,8 +16,11 @@ public class Change_Level : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-
             SceneManager.LoadSceneAsync(scene_to_load, LoadSceneMode.Additive);
+        }
+        else
+        {
+            return;
         }
         if (!unloaded)
         {

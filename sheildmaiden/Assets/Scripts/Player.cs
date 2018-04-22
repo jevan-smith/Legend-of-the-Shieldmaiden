@@ -25,7 +25,9 @@ public class Player : Entity {
     private Shader shaderSpritesDefault;
 
     [HideInInspector]
-    public AudioSource sound;
+    public AudioSource[] sounds;
+    public AudioSource noise1;
+    public AudioSource noise2;
 
     [HideInInspector]
     public bool hit_sound = false;
@@ -34,7 +36,11 @@ public class Player : Entity {
     protected override void Start () 
 	{
 
-        sound = GetComponent<AudioSource>();
+        //sound = GetComponent<AudioSource>();
+
+        sounds = GetComponents<AudioSource>();
+        noise1 = sounds[0];
+        noise2 = sounds[1];
 
         spriteR = gameObject.GetComponent<SpriteRenderer>();
         base.Start ();
@@ -94,6 +100,7 @@ public class Player : Entity {
     {
         if (!isAttacking && !IsMoving)
         {
+            noise2.Play();
 
             isAttacking = true;
 
@@ -127,7 +134,7 @@ public class Player : Entity {
                 hit_sound = true;
                 if (hit_sound == true)
                 {
-                    sound.Play();
+                    noise1.Play();
                     hit_sound = false;
                 }
             }    

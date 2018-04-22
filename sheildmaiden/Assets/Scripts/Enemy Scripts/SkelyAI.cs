@@ -9,7 +9,6 @@ public class SkelyAI : MonoBehaviour
     public Transform[] patrolnodes;//Number and object set in unity
     [HideInInspector]
     public float speed;//Set in Unity
-    [HideInInspector]
     public float run_speed;//Speed when playeris detected
     Transform CurrNode;//Node That the enemy will move to
     int CurrIndex;//Number that CurrNode is listed as in patrolnodes array
@@ -30,6 +29,9 @@ public class SkelyAI : MonoBehaviour
     public bool hit_sound = false;
 
     [HideInInspector]
+    public bool dead_sound = false;
+
+    [HideInInspector]
     private bool dead;
 
     /* Is Attacking? */
@@ -40,7 +42,13 @@ public class SkelyAI : MonoBehaviour
     public SpriteRenderer spriteR;
 
     [HideInInspector]
-    public AudioSource sound;
+    public AudioSource[] sounds;
+    [HideInInspector]
+    public AudioSource noise1;
+    [HideInInspector]
+    public AudioSource noise2;
+    [HideInInspector]
+    public bool canRunAudio = true;
 
     [HideInInspector]
     public bool blink = false; // if true enemy will flash a color
@@ -53,7 +61,11 @@ public class SkelyAI : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        sound = GetComponent<AudioSource>();
+        sounds = GetComponents<AudioSource>();
+        noise1 = sounds[0];
+        noise2 = sounds[1];
+
+
         spriteR = gameObject.GetComponent<SpriteRenderer>(); 
 
         //At start first node is set
@@ -122,6 +134,10 @@ public class SkelyAI : MonoBehaviour
         if (curr_hp <= 0)
         {
             motion.SetBool("Dead", true);//Starts death animation
+
+            if (canRunAudio == true)
+                noise2.Play();
+
             dead = true;//Stops the movement of Enemy Game Object
             if (dissolve > 0)//checks if dissolve timer has time left
             {
@@ -131,6 +147,8 @@ public class SkelyAI : MonoBehaviour
             {
                 Destroy(this.gameObject);//Time <= 0 game object is destroyed
             }
+            canRunAudio = false;
+
 
         }
 
@@ -140,7 +158,7 @@ public class SkelyAI : MonoBehaviour
         }
         if (hit_sound == true)
         {
-            sound.Play();
+            noise1.Play();
             hit_sound = false;
         }
 

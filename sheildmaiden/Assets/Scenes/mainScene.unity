@@ -20805,6 +20805,7 @@ GameObject:
   - component: {fileID: 1753214837}
   - component: {fileID: 1753214836}
   - component: {fileID: 1753214842}
+  - component: {fileID: 1753214843}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -20890,7 +20891,9 @@ MonoBehaviour:
   Player_Damage: 2
   blink: 0
   spriteR: {fileID: 0}
-  sound: {fileID: 0}
+  sounds: []
+  noise1: {fileID: 0}
+  noise2: {fileID: 0}
   hit_sound: 0
 --- !u!212 &1753214840
 SpriteRenderer:
@@ -20962,6 +20965,86 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 8503e02592188f54d9711e2f4a2b32cb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.513
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!82 &1753214843
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1753214835}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ad68915a0e1fbe84bb678210475f3b9b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.444
   m_Pitch: 1
   Loop: 0
   Mute: 0
