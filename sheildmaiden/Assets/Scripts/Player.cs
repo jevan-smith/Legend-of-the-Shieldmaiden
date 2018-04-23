@@ -9,6 +9,7 @@ public class Player : Entity {
 
     public int Player_Health = 8;
     public int Player_Damage = 2;
+    public int Player_Keys = 0;
 
     SpriteRenderer m_SpriteRenderer;
     Color m_NewColor;
@@ -28,19 +29,26 @@ public class Player : Entity {
     public AudioSource[] sounds;
     public AudioSource noise1;
     public AudioSource noise2;
+    public AudioSource noise3;
 
     [HideInInspector]
     public bool hit_sound = false;
 
+    [HideInInspector]
+    public bool pickup_sound = false;
+
+
+
     // Use this for initialization
     protected override void Start () 
 	{
-
+        Player_Keys = Global.KeysCollected;
         //sound = GetComponent<AudioSource>();
 
         sounds = GetComponents<AudioSource>();
         noise1 = sounds[0];
         noise2 = sounds[1];
+        noise3 = sounds[2];
 
         spriteR = gameObject.GetComponent<SpriteRenderer>();
         base.Start ();
@@ -139,6 +147,20 @@ public class Player : Entity {
                 }
             }    
 
+        }
+
+        if (other.tag == "Key") //Checks for weapon hit
+        {
+
+            Global.KeysCollected += 1;
+            Player_Keys = Global.KeysCollected;
+
+            pickup_sound = true;
+            if (pickup_sound == true)
+            {
+                noise3.Play();
+                pickup_sound = false;
+            }
         }
     }
 
