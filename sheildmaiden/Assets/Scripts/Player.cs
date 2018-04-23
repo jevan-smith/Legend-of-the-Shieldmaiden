@@ -7,7 +7,9 @@ public class Player : Entity {
 
 
 
+    [HideInInspector]
     public int Player_Health = 8;
+
     public int Player_Damage = 2;
     public int Player_Keys = 0;
 
