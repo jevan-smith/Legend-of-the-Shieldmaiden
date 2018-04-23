@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Demo Enemy
+  - Weapon
+  - Enemy_Hit
+  - Key
+  - heart
   layers:
   - Default
   - TransparentFX
