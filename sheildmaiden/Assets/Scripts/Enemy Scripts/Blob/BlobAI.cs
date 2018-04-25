@@ -19,7 +19,7 @@ public class BlobAI : MonoBehaviour
 
     /* **Health** */
     [HideInInspector]
-    private float dissolve;
+    public float dissolve;
 
     public int max_hp;
     public int curr_hp;
@@ -51,6 +51,8 @@ public class BlobAI : MonoBehaviour
     [HideInInspector]
     public AudioSource noise2;
     [HideInInspector]
+    public AudioSource noise3;
+    [HideInInspector]
     public bool canRunAudio = true;
 
     [HideInInspector]
@@ -69,6 +71,7 @@ public class BlobAI : MonoBehaviour
         sounds = GetComponents<AudioSource>();
         noise1 = sounds[0];
         noise2 = sounds[1];
+        noise3 = sounds[2];
 
 
         spriteR = gameObject.GetComponent<SpriteRenderer>();
@@ -83,7 +86,7 @@ public class BlobAI : MonoBehaviour
         motion = GetComponent<Animator>();
 
         //hp
-        dissolve = 200 * Time.deltaTime;// Time until object will be deleted upon death
+        dissolve = 35 * Time.deltaTime;// Time until object will be deleted upon death
         max_hp = 10;//Enemy max hp
         curr_hp = 10;//current hp
         dead = false;//is it dead?
@@ -151,8 +154,9 @@ public class BlobAI : MonoBehaviour
                 }
 
             }
-
-            if (canRunAudio == true)
+            if (canRunAudio == true && !Exploding && !Exploded)
+                noise3.Play();
+            else if (canRunAudio == true)
                 noise2.Play();
 
             dead = true;//Stops the movement of Enemy Game Object

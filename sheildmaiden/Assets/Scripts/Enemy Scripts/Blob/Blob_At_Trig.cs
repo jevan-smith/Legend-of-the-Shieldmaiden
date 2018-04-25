@@ -24,6 +24,7 @@ public class Blob_At_Trig : MonoBehaviour
         {
             /* **Make Explode** */
             GetComponentInParent<BlobAI>().Exploding = true;
+            GetComponentInParent<BlobAI>().dissolve = 150 * Time.deltaTime;
 
             //new WaitForSeconds(.4f);
             StartCoroutine(turnRed());
