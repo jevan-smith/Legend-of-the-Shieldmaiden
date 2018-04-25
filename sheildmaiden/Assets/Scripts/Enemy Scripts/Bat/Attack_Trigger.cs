@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Attack_Trigger : MonoBehaviour {
 
-    public GameObject Parent;
+    //public GameObject Parent;
     private Animator motion;
 
     private void Start()
     {
-        motion = Parent.GetComponent<Animator>();
+        motion = this.transform.parent.GetComponent<Animator>();//Sets motion to parent game object animator component.
 
     }
 
@@ -18,11 +18,11 @@ public class Attack_Trigger : MonoBehaviour {
     {
         if (other.tag == "Player")//Checks for PLayer
         {
-            //motion.SetBool("Attack", true);
-            StartCoroutine(pauseAction());
-
             //Enemy is attacking
             this.transform.parent.GetComponent<SkelyAI>().attacking = true;
+
+            //motion.SetBool("Attack", true);
+            StartCoroutine(pauseAction());
         }
 
     }
@@ -39,8 +39,14 @@ public class Attack_Trigger : MonoBehaviour {
 
     private IEnumerator pauseAction()
     {
-        motion.SetBool("Attack", true);
-        yield return new WaitForSeconds(1);
-        motion.SetBool("Attack", false);
+        // Loop to continue attack animation while attacking.
+        while (this.transform.parent.GetComponent<SkelyAI>().attacking)
+        {
+            motion.SetBool("Attack", true);
+            yield return new WaitForSeconds(.5f);//Waits .5 seconds to set animation to not attacking
+            motion.SetBool("Attack", false);
+            yield return new WaitForSeconds(1);//Waits 1 scond before starting loop again.
+
+        }
     }
 }

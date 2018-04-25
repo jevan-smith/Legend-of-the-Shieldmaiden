@@ -9,6 +9,8 @@ TagManager:
   - Enemy_Hit
   - Key
   - heart
+  - Explosion_Radius
+  - Blob
   layers:
   - Default
   - TransparentFX

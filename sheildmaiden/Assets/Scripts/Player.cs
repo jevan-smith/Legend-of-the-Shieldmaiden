@@ -150,6 +150,27 @@ public class Player : Entity {
             }    
 
         }
+        
+        else if (other.tag == "Explosion_Radius")
+        {
+            if (Player_Health != 0 && /*GameObject.Find("Exploding Blob").*/GetComponent<BlobAI>().Exploding)
+            {
+                GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth -= /*GameObject.Find("Exploding Blob").*/GetComponent<BlobAI>().damage;
+                Player_Health = GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth;
+
+                blink = true;
+                if (blink == true)
+                {
+                    StartCoroutine(blinking());
+                }
+                hit_sound = true;
+                if (hit_sound == true)
+                {
+                    noise1.Play();
+                    hit_sound = false;
+                }
+            }
+        }
 
         if (other.tag == "Key") //Checks for weapon hit
         {
