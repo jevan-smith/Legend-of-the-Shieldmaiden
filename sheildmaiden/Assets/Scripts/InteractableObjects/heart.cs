@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class heart : MonoBehaviour {
 
+
     //int playerHealth = GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth;
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -26,6 +27,7 @@ public class heart : MonoBehaviour {
             {
                 GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth += 1;
             }
+
             else
             {
                 return;

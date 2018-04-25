@@ -9,6 +9,8 @@ public class Player : Entity {
 
     [HideInInspector]
     public int Player_Health = 8;
+    [HideInInspector]
+    public bool audio_health = false;
 
     public int Player_Damage = 2;
     public int Player_Keys = 0;
@@ -32,6 +34,7 @@ public class Player : Entity {
     public AudioSource noise1;
     public AudioSource noise2;
     public AudioSource noise3;
+    public AudioSource noise4;
 
     [HideInInspector]
     public bool hit_sound = false;
@@ -51,6 +54,7 @@ public class Player : Entity {
         noise1 = sounds[0];
         noise2 = sounds[1];
         noise3 = sounds[2];
+        noise4 = sounds[3];
 
         spriteR = gameObject.GetComponent<SpriteRenderer>();
         base.Start ();
@@ -185,6 +189,20 @@ public class Player : Entity {
                 pickup_sound = false;
             }
         }
+
+        if (other.tag == "heart") //Checks for weapon hit
+        {
+            if (Player_Health < 8)
+            {
+                audio_health = true;
+                if (audio_health == true)
+                {
+                    noise4.Play();
+                    StartCoroutine(blinking_red());
+                    audio_health = false;
+                }
+            }
+        }
     }
 
 
@@ -192,6 +210,12 @@ public class Player : Entity {
     {
         myRenderer.material.shader = shaderGUItext;
         myRenderer.color = Color.white;
+    }
+
+    void redSprite()
+    {
+        myRenderer.material.shader = shaderGUItext;
+        myRenderer.color = Color.red;
     }
 
     void normalSprite()
@@ -205,6 +229,17 @@ public class Player : Entity {
         for (int i = 0; i < 3; i++)
         {
             whiteSprite();
+            yield return new WaitForSeconds(.05f);
+            normalSprite();
+            yield return new WaitForSeconds(.05f);
+        }
+        blink = false;
+    }
+    public IEnumerator blinking_red()
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            redSprite();
             yield return new WaitForSeconds(.05f);
             normalSprite();
             yield return new WaitForSeconds(.05f);
