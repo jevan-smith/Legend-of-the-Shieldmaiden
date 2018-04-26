@@ -16,12 +16,13 @@ public abstract class Entity : MonoBehaviour
 
     protected Coroutine attackRoutine;
 
-	/// <summary>
-	/// The Entity's direction
-	/// </summary>
-	protected Vector2 direction;
+    /// <summary>
+    /// The Entity's direction
+    /// </summary>
+    protected Vector2 direction;
 
     protected bool isAttacking = false;
+    protected bool isAttacking2 = false;
 
     public bool IsMoving
     {
@@ -92,7 +93,9 @@ public abstract class Entity : MonoBehaviour
         {
             StopCoroutine(attackRoutine);
             isAttacking = false;
+            animator.SetInteger("type", 0);
             animator.SetBool("attack", isAttacking);
+            //animator.SetInteger("type", 0);
         }
         isAttacking = false;
     }

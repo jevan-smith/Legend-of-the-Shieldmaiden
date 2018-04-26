@@ -83,9 +83,14 @@ public class Player : Entity {
 	{
 		direction = Vector2.zero;
 
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.J) && isAttacking == false)
         {
             attackRoutine = StartCoroutine(Attack());
+        }
+
+        if (Input.GetKeyDown(KeyCode.K) && isAttacking == false)
+        {
+            attackRoutine = StartCoroutine(Attack2());
         }
 
         if (isAttacking == false)
@@ -119,6 +124,27 @@ public class Player : Entity {
             isAttacking = true;
 
             animator.SetBool("attack", isAttacking);
+            animator.SetInteger("type", 1);
+
+            yield return new WaitForSeconds(0.25F);
+
+            //Debug.Log("attack was a success");
+
+            StopAttack();
+        }
+
+    }
+
+    private IEnumerator Attack2()
+    {
+        if (!isAttacking && !IsMoving)
+        {
+            //noise2.Play();
+
+            isAttacking = true;
+
+            animator.SetBool("attack", isAttacking);
+            animator.SetInteger("type", 2);
 
             yield return new WaitForSeconds(0.25F);
 
