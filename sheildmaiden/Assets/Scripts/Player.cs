@@ -83,6 +83,33 @@ public class Player : Entity {
 	{
 		direction = Vector2.zero;
 
+        // Used for debuging HEAL to FULL
+        if (Input.GetKeyDown(KeyCode.Alpha1) && isAttacking == false)
+        {
+            GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth = 8;
+            audio_health = true;
+            if (audio_health == true)
+            {
+                noise4.Play();
+                StartCoroutine(blinking_red());
+                audio_health = false;
+            }
+        }
+
+        // Used for debuging Add Keys
+        if (Input.GetKeyDown(KeyCode.Alpha2) && isAttacking == false)
+        {
+            Global.KeysCollected += 1;
+            Player_Keys = Global.KeysCollected;
+
+            pickup_sound = true;
+            if (pickup_sound == true)
+            {
+                noise3.Play();
+                pickup_sound = false;
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.J) && isAttacking == false)
         {
             attackRoutine = StartCoroutine(Attack());
