@@ -14,6 +14,7 @@ public class Player : Entity {
 
     public int Player_Damage = 2;
     public int Player_Keys = 0;
+	public int Player_Arrows = 0;
 
     SpriteRenderer m_SpriteRenderer;
     Color m_NewColor;
@@ -51,6 +52,7 @@ public class Player : Entity {
     protected override void Start () 
 	{
         Player_Keys = Global.KeysCollected;
+		Player_Arrows = Global.ArrowsCollected;
         //sound = GetComponent<AudioSource>();
 
         
@@ -117,6 +119,19 @@ public class Player : Entity {
             }
         }
 
+		if (Input.GetKeyDown(KeyCode.Alpha3) && isAttacking == false)
+		{
+			Global.ArrowsCollected += 1;
+			Player_Arrows = Global.ArrowsCollected;
+
+			//pickup_sound = true;
+			if (pickup_sound == true)
+			{
+				noise3.Play();
+				pickup_sound = false;
+			}
+		}
+
         if (Input.GetKeyDown(KeyCode.J) && isAttacking == false)
         {
             attackRoutine = StartCoroutine(Attack());
@@ -171,8 +186,10 @@ public class Player : Entity {
 
     private IEnumerator Attack2()
     {
-        if (!isAttacking && !IsMoving)
+		if (!isAttacking && !IsMoving && Player_Arrows > 0)
         {
+			Global.ArrowsCollected -= 1;
+			Player_Arrows = Global.ArrowsCollected;
 
             Vector3 arrowOffset = transform.position;
             
@@ -269,19 +286,33 @@ public class Player : Entity {
             }
         }
 
-        if (other.tag == "Key") //Checks for weapon hit
+        if (other.tag == "Arrow_Pickup") //Checks for weapon hit
         {
 
-            Global.KeysCollected += 1;
-            Player_Keys = Global.KeysCollected;
+            Global.ArrowsCollected += 1;
+            Player_Arrows = Global.ArrowsCollected;
 
-            pickup_sound = true;
+            //pickup_sound = true;
             if (pickup_sound == true)
             {
                 noise3.Play();
                 pickup_sound = false;
             }
         }
+
+		if (other.tag == "Key") //Checks for weapon hit
+		{
+
+			Global.KeysCollected += 1;
+			Player_Keys = Global.KeysCollected;
+
+			pickup_sound = true;
+			if (pickup_sound == true)
+			{
+				noise3.Play();
+				pickup_sound = false;
+			}
+		}
 
         if (other.tag == "heart") //Checks for weapon hit
         {

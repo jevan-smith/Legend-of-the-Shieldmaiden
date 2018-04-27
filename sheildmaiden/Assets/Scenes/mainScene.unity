@@ -309,6 +309,10 @@ Prefab:
       propertyPath: m_Volume
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1535146618779342, guid: 619b71c5c4132c34393234beb5659762, type: 2}
+      propertyPath: m_TagString
+      value: Enemy_Hit
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 619b71c5c4132c34393234beb5659762, type: 2}
   m_IsPrefabParent: 0
@@ -421,6 +425,10 @@ Prefab:
         type: 2}
       propertyPath: m_Volume
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535146618779342, guid: 619b71c5c4132c34393234beb5659762, type: 2}
+      propertyPath: m_TagString
+      value: Enemy_Hit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 619b71c5c4132c34393234beb5659762, type: 2}

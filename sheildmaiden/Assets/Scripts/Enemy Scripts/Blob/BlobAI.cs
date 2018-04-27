@@ -86,7 +86,7 @@ public class BlobAI : MonoBehaviour
         motion = GetComponent<Animator>();
 
         //hp
-        dissolve = 35 * Time.deltaTime;// Time until object will be deleted upon death
+        dissolve = 100 * Time.deltaTime;// Time until object will be deleted upon death
         max_hp = 10;//Enemy max hp
         curr_hp = 10;//current hp
         dead = false;//is it dead?

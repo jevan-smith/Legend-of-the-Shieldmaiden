@@ -11,6 +11,8 @@ TagManager:
   - heart
   - Explosion_Radius
   - Blob
+  - Arrow
+  - Arrow_Pickup
   layers:
   - Default
   - TransparentFX

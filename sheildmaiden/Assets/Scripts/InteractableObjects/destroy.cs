@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Key : MonoBehaviour
+public class destroy : MonoBehaviour
 {
     public void OnTriggerEnter2D(Collider2D other)
     {
