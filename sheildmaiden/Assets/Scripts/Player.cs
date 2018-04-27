@@ -42,6 +42,9 @@ public class Player : Entity {
     [HideInInspector]
     public bool pickup_sound = false;
 
+    public GameObject arrowPrefab;
+    Quaternion rot;
+    
 
 
     // Use this for initialization
@@ -49,6 +52,10 @@ public class Player : Entity {
 	{
         Player_Keys = Global.KeysCollected;
         //sound = GetComponent<AudioSource>();
+
+        
+
+        animator = GetComponent<Animator>();
 
         sounds = GetComponents<AudioSource>();
         noise1 = sounds[0];
@@ -166,10 +173,43 @@ public class Player : Entity {
     {
         if (!isAttacking && !IsMoving)
         {
+
+            Vector3 arrowOffset = transform.position;
+            
             //noise2.Play();
 
-            isAttacking = true;
+            //facing right
+            if (animator.GetFloat("x") == 1.0 && animator.GetFloat("y") == 0.0)
+            {
+                arrowOffset = transform.rotation * new Vector3(0.4f, 0, 0);
+                rot = Quaternion.Euler(0, 0, 45);
+            }
+            //facing left
+            else if (animator.GetFloat("x") == -1.0 && animator.GetFloat("y") == 0.0)
+            {
+                arrowOffset = transform.rotation * new Vector3(-0.4f, 0, 0);
+                rot = Quaternion.Euler(0, 0, 225);
+            }
+            //facing up
+            else if (animator.GetFloat("x") == 0.0 && animator.GetFloat("y") == 1.0)
+            {
+                arrowOffset = transform.rotation * new Vector3(0, 0.4f, 0);
+                rot = Quaternion.Euler(0, 0, -225);
+            }
+            //facing down
+            else if (animator.GetFloat("x") == 0.0 && animator.GetFloat("y") == -1.0)
+            {
+                arrowOffset = transform.rotation * new Vector3(0, -0.4f, 0);
+                rot = Quaternion.Euler(0, 0, -45);
+            }
 
+
+            Instantiate(arrowPrefab, transform.position + arrowOffset, rot);
+            //Instantiate(arrowPrefab, transform.position, rot);
+
+
+            isAttacking = true;
+            
             animator.SetBool("attack", isAttacking);
             animator.SetInteger("type", 2);
 
