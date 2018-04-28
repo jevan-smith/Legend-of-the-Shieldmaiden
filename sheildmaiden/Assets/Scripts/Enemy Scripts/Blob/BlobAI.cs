@@ -13,6 +13,7 @@ public class BlobAI : MonoBehaviour
     Transform CurrNode;//Node That the enemy will move to
     int CurrIndex;//Number that CurrNode is listed as in patrolnodes array
     private Transform target;//Player position
+	private Transform target2;//Player position
 
     /* **Animation Section** */
     private Animator motion;//Gives access to animator component
@@ -58,10 +59,14 @@ public class BlobAI : MonoBehaviour
     [HideInInspector]
     public bool blink = false; // if true enemy will flash a color
 
+	[HideInInspector]
+	public bool forceMove = false;
+
 
     public SpriteRenderer myRenderer;
     public Shader shaderGUItext;
     public Shader shaderSpritesDefault;
+
 
     // Use this for initialization
     void Start()
@@ -80,6 +85,7 @@ public class BlobAI : MonoBehaviour
         CurrIndex = 0;
         CurrNode = patrolnodes[CurrIndex];
         target = null;//Target set to null(not detected)
+		//target2 = GameObject.FindWithTag("Player").transform;
 
 
         //Animation Initialization
@@ -106,11 +112,12 @@ public class BlobAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		target2 = GameObject.FindWithTag("Player").transform;
 
         if (!Exploding)//If not attacking(attackin==false) do movement stuff below
         {
             //Moves enemy towards patrol node at set speed if not dead
-            if (target == null && !dead)
+			if (target == null && !dead && forceMove == false)
             {
                 //print(CurrNode.position.x);
                 SetDir(CurrNode.position.x);//Sets direction before move
@@ -134,12 +141,19 @@ public class BlobAI : MonoBehaviour
 
             }
 
-            if (target != null && !dead && !blink) //Will move to player if detected and not dead
+			if (target != null && !dead && !blink) //Will move to player if detected and not dead
             {
                 SetDir(target.position.x);//Sets direction before move 
                 this.transform.position = Vector2.MoveTowards(this.transform.position, target.position, speed * Time.deltaTime);
 
             }
+			if (forceMove == true && !dead && !blink && target == null) //Will move to player if detected and not dead
+			{
+				speed = run_speed + 0.5f;
+				SetDir(target2.position.x);//Sets direction before move 
+				this.transform.position = Vector2.MoveTowards(this.transform.position, target2.position, speed * Time.deltaTime);
+
+			}
         }
 
         //if hp is <= 0 start death animation, dead==true, start dissolve timer, destroy enemy object

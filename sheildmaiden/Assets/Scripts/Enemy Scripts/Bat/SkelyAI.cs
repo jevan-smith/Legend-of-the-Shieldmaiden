@@ -13,6 +13,7 @@ public class SkelyAI : MonoBehaviour
     Transform CurrNode;//Node That the enemy will move to
     int CurrIndex;//Number that CurrNode is listed as in patrolnodes array
     private Transform target;//Player position
+	private Transform target2;//Player position
 
     /* **Animation Section** */
     private Animator motion;//Gives access to animator component
@@ -53,6 +54,8 @@ public class SkelyAI : MonoBehaviour
     [HideInInspector]
     public bool blink = false; // if true enemy will flash a color
 
+	[HideInInspector]
+	public bool forceMove = false;
 
     private SpriteRenderer myRenderer;
     private Shader shaderGUItext;
@@ -95,11 +98,12 @@ public class SkelyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		target2 = GameObject.FindWithTag("Player").transform;
 
         if (!attacking)//If not attacking(attackin==false) do movement stuff below
         {
             //Moves enemy towards patrol node at set speed if not dead
-            if (target == null && !dead)
+			if (target == null && !dead && forceMove == false)
             {
                 SetDir(CurrNode.position.x);//Sets direction before move
                 transform.position = Vector2.MoveTowards(transform.position, CurrNode.position, speed * Time.deltaTime);
@@ -128,6 +132,13 @@ public class SkelyAI : MonoBehaviour
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
             }
+			if (forceMove == true && !dead && !blink && target == null) //Will move to player if detected and not dead
+			{
+				speed = run_speed + 0.5f;
+				SetDir(target2.position.x);//Sets direction before move 
+				this.transform.position = Vector2.MoveTowards(this.transform.position, target2.position, speed * Time.deltaTime);
+
+			}
         }
 
         //if hp is <= 0 start death animation, dead==true, start dissolve timer, destroy enemy object

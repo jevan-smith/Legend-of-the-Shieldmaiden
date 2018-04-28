@@ -37,6 +37,7 @@ public class On_Hit : MonoBehaviour
 				this.transform.parent.GetComponent<SkelyAI>().curr_hp -= GameObject.Find("Player").GetComponent<Player>().Player_Damage;//changes variable from parent object
 				this.transform.parent.GetComponent<SkelyAI>().blink = true;
 				this.transform.parent.GetComponent<SkelyAI>().hit_sound = true;
+				this.transform.parent.GetComponent<SkelyAI>().forceMove = true;
 
 			}
 		}

@@ -35,6 +35,7 @@ public class Blob_On_Hit : MonoBehaviour
 				this.transform.parent.GetComponent<BlobAI>().curr_hp -= GameObject.Find("Player").GetComponent<Player>().Player_Damage;//changes variable from parent object
 				this.transform.parent.GetComponent<BlobAI>().blink = true;
 				this.transform.parent.GetComponent<BlobAI>().hit_sound = true;
+				this.transform.parent.GetComponent<BlobAI> ().forceMove = true;
 
 			}
 		}
