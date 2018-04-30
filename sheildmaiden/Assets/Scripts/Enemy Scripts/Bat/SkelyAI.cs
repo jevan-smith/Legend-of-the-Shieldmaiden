@@ -113,8 +113,15 @@ public class SkelyAI : MonoBehaviour
 
         if (!attacking)//If not attacking(attackin==false) do movement stuff below
         {
+
+            if (On_Hit.arrow2_hit == true)
+            {
+                speed = run_speed - 0.5f;
+            }
+
+
             //Moves enemy towards patrol node at set speed if not dead
-			if (target == null && !dead && forceMove == false)
+            if (target == null && !dead && forceMove == false)
             {
                 SetDir(CurrNode.position.x);//Sets direction before move
                 transform.position = Vector2.MoveTowards(transform.position, CurrNode.position, speed * Time.deltaTime);

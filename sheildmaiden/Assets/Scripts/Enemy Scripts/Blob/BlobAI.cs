@@ -128,8 +128,15 @@ public class BlobAI : MonoBehaviour
 
         if (!Exploding)//If not attacking(attackin==false) do movement stuff below
         {
+
+            if (Blob_On_Hit.arrow2_hit == true)
+            {
+                speed = run_speed - 0.5f;
+            }
+
+
             //Moves enemy towards patrol node at set speed if not dead
-			if (target == null && !dead && forceMove == false)
+            if (target == null && !dead && forceMove == false )
             {
                 //print(CurrNode.position.x);
                 SetDir(CurrNode.position.x);//Sets direction before move
