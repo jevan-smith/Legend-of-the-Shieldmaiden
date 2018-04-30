@@ -67,16 +67,27 @@ public class BlobAI : MonoBehaviour
     public Shader shaderGUItext;
     public Shader shaderSpritesDefault;
 
+    [HideInInspector]
+    SpriteRenderer m_SpriteRenderer;
+    [HideInInspector]
+    Color m_NewColor;
+    [HideInInspector]
+    public static float timer = 5f;
 
     // Use this for initialization
     void Start()
     {
+        //Fetch the SpriteRenderer from the GameObject
+        m_SpriteRenderer = GetComponent<SpriteRenderer>();
+        
+
         damage = 3;
 
         sounds = GetComponents<AudioSource>();
         noise1 = sounds[0];
         noise2 = sounds[1];
         noise3 = sounds[2];
+
 
 
         spriteR = gameObject.GetComponent<SpriteRenderer>();
@@ -112,7 +123,8 @@ public class BlobAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		target2 = GameObject.FindWithTag("Player").transform;
+
+        target2 = GameObject.FindWithTag("Player").transform;
 
         if (!Exploding)//If not attacking(attackin==false) do movement stuff below
         {
@@ -147,9 +159,29 @@ public class BlobAI : MonoBehaviour
                 this.transform.position = Vector2.MoveTowards(this.transform.position, target.position, speed * Time.deltaTime);
 
             }
-			if (forceMove == true && !dead && !blink && target == null) //Will move to player if detected and not dead
+			if (forceMove == true && !dead && !blink && target == null) //Will force move to player if hit with arrow
 			{
-				speed = run_speed + 0.5f;
+                if (Blob_On_Hit.arrow2_hit == true)
+                {
+
+                    speed = run_speed - 0.5f;
+                   
+                    m_SpriteRenderer.color = Color.cyan;
+
+
+                    timer -= Time.deltaTime;
+
+                    if (timer <= 0)
+                    {
+                        Blob_On_Hit.arrow2_hit = false;
+                        m_SpriteRenderer.color = Color.white;
+                        timer = 5f;
+                    }
+                }
+                else
+                {
+                    speed = run_speed + 0.5f;
+                }
 				SetDir(target2.position.x);//Sets direction before move 
 				this.transform.position = Vector2.MoveTowards(this.transform.position, target2.position, speed * Time.deltaTime);
 

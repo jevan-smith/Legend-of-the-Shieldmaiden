@@ -13,6 +13,7 @@ TagManager:
   - Blob
   - Arrow
   - Arrow_Pickup
+  - Arrow2
   layers:
   - Default
   - TransparentFX

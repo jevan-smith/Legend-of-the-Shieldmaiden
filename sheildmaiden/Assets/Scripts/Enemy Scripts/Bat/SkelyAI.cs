@@ -61,9 +61,20 @@ public class SkelyAI : MonoBehaviour
     private Shader shaderGUItext;
     private Shader shaderSpritesDefault;
 
+    [HideInInspector]
+    SpriteRenderer m_SpriteRenderer;
+    [HideInInspector]
+    Color m_NewColor;
+    [HideInInspector]
+    public static float timer = 5f;
+
     // Use this for initialization
     void Start()
     {
+
+        //Fetch the SpriteRenderer from the GameObject
+        m_SpriteRenderer = GetComponent<SpriteRenderer>();
+
         sounds = GetComponents<AudioSource>();
         noise1 = sounds[0];
         noise2 = sounds[1];
@@ -132,13 +143,33 @@ public class SkelyAI : MonoBehaviour
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
             }
-			if (forceMove == true && !dead && !blink && target == null) //Will move to player if detected and not dead
-			{
-				speed = run_speed + 0.5f;
-				SetDir(target2.position.x);//Sets direction before move 
-				this.transform.position = Vector2.MoveTowards(this.transform.position, target2.position, speed * Time.deltaTime);
+            if (forceMove == true && !dead && !blink && target == null) //Will force move to player if hit with arrow
+            {
+                if (On_Hit.arrow2_hit == true)
+                {
 
-			}
+                    speed = run_speed - 0.5f;
+
+                    m_SpriteRenderer.color = Color.cyan;
+
+
+                    timer -= Time.deltaTime;
+
+                    if (timer <= 0)
+                    {
+                        On_Hit.arrow2_hit = false;
+                        m_SpriteRenderer.color = Color.white;
+                        timer = 5f;
+                    }
+                }
+                else
+                {
+                    speed = run_speed + 0.5f;
+                }
+                SetDir(target2.position.x);//Sets direction before move 
+                this.transform.position = Vector2.MoveTowards(this.transform.position, target2.position, speed * Time.deltaTime);
+
+            }
         }
 
         //if hp is <= 0 start death animation, dead==true, start dissolve timer, destroy enemy object

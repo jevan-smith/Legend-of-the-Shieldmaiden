@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-/Users/jevansmith/Desktop/play!.exe
+C:/Users/Admin/Desktop/test.exe
 SceneListBegin?
 Assets/Scenes/NeverUnload.unity
 Assets/Scenes/mainScene.unity
@@ -13,7 +13,7 @@ dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics
 168fc39dd067fd379cc472346180833f Assembly-CSharp.dll:.HeartUI
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
-1fdf3a07a21d0e44c0b6ae9271f73163 Assembly-CSharp.dll:.Player
+761dc34f513201060fb0dd6cf1b72b01 Assembly-CSharp.dll:.Player
 e07a21ae56164277ebc042ae27da99ce Assembly-CSharp.dll:.HeartIcon
 b73a5aa8774e69a66143bcaec14db4e0 Assembly-CSharp.dll:.Camera_Follow
 1449ad16651f9066fb6078e9b57835ea Assembly-CSharp.dll:.PlayerH
@@ -166,7 +166,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Attack_Trigger
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Blob_At_Trig
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.heart
-829cb78e09a235cc4f583242c89ed1c5 Assembly-CSharp.dll:.BlobAI
+6b13e3624f7ff35159eb1b0e60f196a0 Assembly-CSharp.dll:.BlobAI
 81d3fa35f3270744d8c271fbb7597c65 Assembly-CSharp.dll:.selfDestruct
-ee9899fbf66ce5ad92c850ef03a01d78 Assembly-CSharp.dll:.SkelyAI
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Key
+579a845c5d960ed209248c32ef5a7e02 Assembly-CSharp.dll:.SkelyAI
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.destroy

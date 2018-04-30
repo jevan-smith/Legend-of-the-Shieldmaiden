@@ -15,6 +15,7 @@ public class Player : Entity {
     public int Player_Damage = 2;
     public int Player_Keys = 0;
 	public int Player_Arrows = 0;
+    public int Player2_Arrows = 0;
 
     SpriteRenderer m_SpriteRenderer;
     Color m_NewColor;
@@ -45,7 +46,11 @@ public class Player : Entity {
 
     public GameObject arrowPrefab;
     Quaternion rot;
-    
+    public GameObject arrow2Prefab;
+
+    [HideInInspector]
+    public static int arrow_swtich = 0;
+
 
 
     // Use this for initialization
@@ -53,9 +58,10 @@ public class Player : Entity {
 	{
         Player_Keys = Global.KeysCollected;
 		Player_Arrows = Global.ArrowsCollected;
+        Player2_Arrows = Global.Arrows2Collected;
         //sound = GetComponent<AudioSource>();
 
-        
+
 
         animator = GetComponent<Animator>();
 
@@ -132,6 +138,19 @@ public class Player : Entity {
 			}
 		}
 
+        if (Input.GetKeyDown(KeyCode.Alpha4) && isAttacking == false)
+        {
+            Global.Arrows2Collected += 1;
+            Player2_Arrows = Global.Arrows2Collected;
+
+            //pickup_sound = true;
+            if (pickup_sound == true)
+            {
+                noise3.Play();
+                pickup_sound = false;
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.J) && isAttacking == false)
         {
             attackRoutine = StartCoroutine(Attack());
@@ -140,6 +159,18 @@ public class Player : Entity {
         if (Input.GetKeyDown(KeyCode.K) && isAttacking == false)
         {
             attackRoutine = StartCoroutine(Attack2());
+        }
+
+        if (Input.GetKeyDown(KeyCode.L) && isAttacking == false)
+        {
+            if (arrow_swtich == 0)
+            {
+                arrow_swtich = 1;
+            }
+            else if (arrow_swtich == 1)
+            {
+                arrow_swtich = 0;
+            }
         }
 
         if (isAttacking == false)
@@ -186,10 +217,19 @@ public class Player : Entity {
 
     private IEnumerator Attack2()
     {
-		if (!isAttacking && !IsMoving && Player_Arrows > 0)
+		if (!isAttacking && !IsMoving && (Player_Arrows > 0 && arrow_swtich == 0) ||
+            (Player2_Arrows > 0 && arrow_swtich == 1))
         {
-			Global.ArrowsCollected -= 1;
-			Player_Arrows = Global.ArrowsCollected;
+            if (arrow_swtich == 0)
+            {
+                Global.ArrowsCollected -= 1;
+                Player_Arrows = Global.ArrowsCollected;
+            }
+            if (arrow_swtich == 1)
+            {
+                Global.Arrows2Collected -= 1;
+                Player2_Arrows = Global.Arrows2Collected;
+            }
 
             Vector3 arrowOffset = transform.position;
             
@@ -220,15 +260,25 @@ public class Player : Entity {
                 rot = Quaternion.Euler(0, 0, -45);
             }
 
-
-            Instantiate(arrowPrefab, transform.position + arrowOffset, rot);
-            //Instantiate(arrowPrefab, transform.position, rot);
+            if (arrow_swtich == 0)
+            {
+                Instantiate(arrowPrefab, transform.position + arrowOffset, rot);
+            }
+            else if (arrow_swtich == 1)
+            {
+                Instantiate(arrow2Prefab, transform.position + arrowOffset, rot);
+            }
+            
 
 
             isAttacking = true;
-            
+
+           
             animator.SetBool("attack", isAttacking);
             animator.SetInteger("type", 2);
+            
+
+            
 
             yield return new WaitForSeconds(0.25F);
 

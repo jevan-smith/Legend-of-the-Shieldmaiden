@@ -28207,6 +28207,8 @@ MonoBehaviour:
   audio_health: 0
   Player_Damage: 2
   Player_Keys: 0
+  Player_Arrows: 0
+  Player2_Arrows: 0
   blink: 0
   spriteR: {fileID: 0}
   sounds: []
@@ -28216,7 +28218,9 @@ MonoBehaviour:
   noise4: {fileID: 0}
   hit_sound: 0
   pickup_sound: 0
-  arrowPrefab: {fileID: 1670156273425198, guid: 0993f0a3f1cf0bf4991004743377748e,
+  arrowPrefab: {fileID: 1670156273425198, guid: 0dec126b59ab15c45982c6924e0e6309,
+    type: 2}
+  arrow2Prefab: {fileID: 1336148047564336, guid: a64d9adb4f5fbab4895fa18fc876700c,
     type: 2}
 --- !u!212 &1753214840
 SpriteRenderer:
