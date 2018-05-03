@@ -8,6 +8,12 @@ public class Change_Level : MonoBehaviour
 
     public string scene_to_load;
     public string scene_to_unload;
+    public Rigidbody player;
+
+    public void Update()
+    {
+        //player = GameObject.Find("Player").GetComponent<Rigidbody>();
+    }
 
     [HideInInspector]
     public bool unloaded = false;

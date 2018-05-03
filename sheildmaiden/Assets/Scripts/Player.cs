@@ -166,10 +166,14 @@ public class Player : Entity {
             if (arrow_swtich == 0)
             {
                 arrow_swtich = 1;
+                changeColor.showType = false;
+                changeColor2.showType2 = true;
             }
             else if (arrow_swtich == 1)
             {
                 arrow_swtich = 0;
+                changeColor.showType = true;
+                changeColor2.showType2 = false;
             }
         }
 
@@ -339,7 +343,7 @@ public class Player : Entity {
         if (other.tag == "Arrow_Pickup") //Checks for weapon hit
         {
 
-            Global.ArrowsCollected += 1;
+            Global.ArrowsCollected += 10;
             Player_Arrows = Global.ArrowsCollected;
 
             //pickup_sound = true;
@@ -350,7 +354,21 @@ public class Player : Entity {
             }
         }
 
-		if (other.tag == "Key") //Checks for weapon hit
+        if (other.tag == "Arrow2_Pickup") //Checks for weapon hit
+        {
+
+            Global.Arrows2Collected += 10;
+            Player2_Arrows = Global.Arrows2Collected;
+
+            //pickup_sound = true;
+            if (pickup_sound == true)
+            {
+                noise3.Play();
+                pickup_sound = false;
+            }
+        }
+
+        if (other.tag == "Key") //Checks for weapon hit
 		{
 
 			Global.KeysCollected += 1;
