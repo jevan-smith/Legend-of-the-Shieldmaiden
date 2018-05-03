@@ -37,6 +37,7 @@ public class Player : Entity {
     public AudioSource noise2;
     public AudioSource noise3;
     public AudioSource noise4;
+    public AudioSource noise5;
 
     [HideInInspector]
     public bool hit_sound = false;
@@ -50,6 +51,14 @@ public class Player : Entity {
 
     [HideInInspector]
     public static int arrow_swtich = 0;
+
+    [HideInInspector]
+    public bool switch_sound;
+
+    public Rigidbody player;
+
+    [HideInInspector]
+    public bool unloaded = false;
 
 
 
@@ -70,6 +79,7 @@ public class Player : Entity {
         noise2 = sounds[1];
         noise3 = sounds[2];
         noise4 = sounds[3];
+        noise5 = sounds[4];
 
         spriteR = gameObject.GetComponent<SpriteRenderer>();
         base.Start ();
@@ -84,9 +94,18 @@ public class Player : Entity {
 	{
         if (Player_Health == 0)
         {
-            //Destroy(this.gameObject);
-            //SceneManager.LoadScene("mainScene");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+            int y = SceneManager.GetActiveScene().buildIndex;
+
+            SceneManager.UnloadSceneAsync(y);
+            SceneManager.UnloadSceneAsync("NeverUnload");
+            SceneManager.LoadSceneAsync("Death_Screen", LoadSceneMode.Additive);
+            SceneManager.UnloadSceneAsync("mainScene");
+            SceneManager.UnloadSceneAsync("level2");
+            SceneManager.UnloadSceneAsync("level 3");
+            //this resets entire game
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
         }
 
         GetInput ();
@@ -168,12 +187,24 @@ public class Player : Entity {
                 arrow_swtich = 1;
                 changeColor.showType = false;
                 changeColor2.showType2 = true;
+                switch_sound = true;
+                if (switch_sound == true)
+                {
+                    noise5.Play();
+                    switch_sound = false;
+                }
             }
             else if (arrow_swtich == 1)
             {
                 arrow_swtich = 0;
                 changeColor.showType = true;
                 changeColor2.showType2 = false;
+                switch_sound = true;
+                if (switch_sound == true)
+                {
+                    noise5.Play();
+                    switch_sound = false;
+                }
             }
         }
 
@@ -382,9 +413,9 @@ public class Player : Entity {
 			}
 		}
 
-        if (other.tag == "heart") //Checks for weapon hit
+        if (other.tag == "heart")
         {
-            if (Player_Health < 8)
+            if (GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth < 8)
             {
                 audio_health = true;
                 if (audio_health == true)
@@ -393,6 +424,16 @@ public class Player : Entity {
                     StartCoroutine(blinking_red());
                     audio_health = false;
                 }
+            }
+        }
+
+        if (other.tag == "door") //Checks for weapon hit
+        {
+            if (Player_Keys >= 10)
+            {
+                Global.KeysCollected -= 10;
+                Player_Keys = Global.KeysCollected;
+                Destroy(GameObject.Find("closed_door"));
             }
         }
     }

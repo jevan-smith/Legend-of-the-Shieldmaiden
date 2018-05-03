@@ -15,6 +15,7 @@ TagManager:
   - Arrow_Pickup
   - Arrow2
   - Arrow2_Pickup
+  - door
   layers:
   - Default
   - TransparentFX
