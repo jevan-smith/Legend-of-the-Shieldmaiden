@@ -45,6 +45,8 @@ public class Player : Entity {
     [HideInInspector]
     public bool pickup_sound = false;
 
+    public GameObject openDoorPrefab;
+
     public GameObject arrowPrefab;
     Quaternion rot;
     public GameObject arrow2Prefab;
@@ -428,6 +430,7 @@ public class Player : Entity {
                 Global.KeysCollected -= 10;
                 Player_Keys = Global.KeysCollected;
                 Destroy(GameObject.Find("closed_door"));
+                Instantiate(openDoorPrefab);
             }
         }
     }
