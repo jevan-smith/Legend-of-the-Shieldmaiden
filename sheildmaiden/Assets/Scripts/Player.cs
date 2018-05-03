@@ -92,20 +92,14 @@ public class Player : Entity {
 	// Update is called once per frame
 	protected override void Update () 
 	{
+        int y = SceneManager.GetActiveScene().buildIndex;
+        Player_Health = GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth;
+
         if (Player_Health == 0)
         {
-
-            int y = SceneManager.GetActiveScene().buildIndex;
-
             SceneManager.UnloadSceneAsync(y);
             SceneManager.UnloadSceneAsync("NeverUnload");
-            SceneManager.LoadSceneAsync("Death_Screen", LoadSceneMode.Additive);
-            SceneManager.UnloadSceneAsync("mainScene");
-            SceneManager.UnloadSceneAsync("level2");
-            SceneManager.UnloadSceneAsync("level 3");
-            //this resets entire game
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
+            SceneManager.LoadSceneAsync("Death_Screen", 0);
         }
 
         GetInput ();
@@ -324,7 +318,7 @@ public class Player : Entity {
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Enemy_Hit") //Checks for weapon hit
         {
@@ -415,7 +409,7 @@ public class Player : Entity {
 
         if (other.tag == "heart")
         {
-            if (GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth < 8)
+            if (Player_Health < 8)
             {
                 audio_health = true;
                 if (audio_health == true)
