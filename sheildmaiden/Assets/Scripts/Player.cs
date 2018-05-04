@@ -46,6 +46,7 @@ public class Player : Entity {
     public bool pickup_sound = false;
 
     public GameObject openDoorPrefab;
+    public GameObject openDoorPrefab2;
 
     public GameObject arrowPrefab;
     Quaternion rot;
@@ -61,6 +62,11 @@ public class Player : Entity {
 
     [HideInInspector]
     public bool unloaded = false;
+
+    [HideInInspector]
+    public bool door1 = false; //when true door is open
+    [HideInInspector]
+    public bool door2 = false; //when true door is open
 
 
 
@@ -425,12 +431,35 @@ public class Player : Entity {
 
         if (other.tag == "door") //Checks for weapon hit
         {
+            
             if (Player_Keys >= 10)
             {
-                Global.KeysCollected -= 10;
-                Player_Keys = Global.KeysCollected;
-                Destroy(GameObject.Find("closed_door"));
-                Instantiate(openDoorPrefab);
+                if (door1 == false)
+                {
+                    door1 = true;
+                    Destroy(GameObject.Find("closed_door"));
+                    Instantiate(openDoorPrefab);
+                    Global.KeysCollected -= 10;
+                    Player_Keys = Global.KeysCollected;
+
+                }
+            }
+        }
+
+        if (other.tag == "door2") //Checks for weapon hit
+        {
+
+            if (Player_Keys >= 10)
+            {
+                if (door2 == false)
+                {
+                    door2 = true;
+                    Destroy(GameObject.Find("closed_door2"));
+                    Instantiate(openDoorPrefab2);
+                    Global.KeysCollected -= 10;
+                    Player_Keys = Global.KeysCollected;
+
+                }
             }
         }
     }
