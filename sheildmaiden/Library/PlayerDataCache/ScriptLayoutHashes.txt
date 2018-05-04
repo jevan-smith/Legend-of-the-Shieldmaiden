@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Admin/Desktop/Shieldmaiden.exe
+C:/Users/Admin/Desktop/test.exe
 SceneListBegin?
 Assets/Scenes/NeverUnload.unity
 Assets/Scenes/mainScene.unity
@@ -152,7 +152,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-6b13e3624f7ff35159eb1b0e60f196a0 Assembly-CSharp.dll:.BlobAI
+51469ce8640b93397356a75b36c9cbe9 Assembly-CSharp.dll:.BlobAI
 b73a5aa8774e69a66143bcaec14db4e0 Assembly-CSharp.dll:.Camera_Follow
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController

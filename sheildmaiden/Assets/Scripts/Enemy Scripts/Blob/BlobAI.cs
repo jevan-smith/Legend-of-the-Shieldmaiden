@@ -68,15 +68,24 @@ public class BlobAI : MonoBehaviour
     public Shader shaderSpritesDefault;
 
     [HideInInspector]
-    SpriteRenderer m_SpriteRenderer;
+    public SpriteRenderer m_SpriteRenderer;
     [HideInInspector]
     Color m_NewColor;
     [HideInInspector]
-    public static float timer = 5f;
+    public static float timer = 0;
+
+    [HideInInspector]
+    public static bool onceAround = false;
+    [HideInInspector]
+    public static bool loopStopper = false;
+
+    [HideInInspector]
+    public static bool arrowHit2 = false;
 
     // Use this for initialization
     void Start()
     {
+
         //Fetch the SpriteRenderer from the GameObject
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         
@@ -123,16 +132,16 @@ public class BlobAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(timer);
         target2 = GameObject.FindWithTag("Player").transform;
 
         if (!Exploding)//If not attacking(attackin==false) do movement stuff below
         {
 
-            if (Blob_On_Hit.arrow2_hit == true)
+            /*if (Blob_On_Hit.arrow2_hit == true)
             {
                 speed = run_speed - 0.5f;
-            }
+            }*/
 
 
             //Moves enemy towards patrol node at set speed if not dead
@@ -168,27 +177,35 @@ public class BlobAI : MonoBehaviour
             }
 			if (forceMove == true && !dead && !blink && target == null) //Will force move to player if hit with arrow
 			{
-                if (Blob_On_Hit.arrow2_hit == true)
+                
+                if (arrowHit2 == true)
                 {
 
-                    speed = run_speed - 0.5f;
-                   
-                    m_SpriteRenderer.color = Color.cyan;
-
+                    if (onceAround == true)
+                    {
+                        timer += 2f;
+                        onceAround = false;
+                    }
 
                     timer -= Time.deltaTime;
 
+                    speed = run_speed - 0.5f;
+
+                    m_SpriteRenderer.color = Color.cyan;
+
                     if (timer <= 0)
                     {
-                        Blob_On_Hit.arrow2_hit = false;
+                        arrowHit2 = false;
                         m_SpriteRenderer.color = Color.white;
-                        timer = 5f;
+                        timer = 2;
                     }
                 }
+
                 else
                 {
                     speed = run_speed + 0.5f;
                 }
+
 				SetDir(target2.position.x);//Sets direction before move 
 				this.transform.position = Vector2.MoveTowards(this.transform.position, target2.position, speed * Time.deltaTime);
 
