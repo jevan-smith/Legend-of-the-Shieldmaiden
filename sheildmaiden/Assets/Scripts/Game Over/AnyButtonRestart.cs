@@ -15,6 +15,11 @@ public class AnyButtonRestart : MonoBehaviour {
     {
 		if (Input.GetKeyDown(KeyCode.Space))
         {
+
+            Global.KeysCollected = 0;
+            Global.ArrowsCollected = 0;
+            Global.Arrows2Collected = 0;
+
             int y = SceneManager.GetActiveScene().buildIndex;
 
             SceneManager.UnloadSceneAsync(y);
