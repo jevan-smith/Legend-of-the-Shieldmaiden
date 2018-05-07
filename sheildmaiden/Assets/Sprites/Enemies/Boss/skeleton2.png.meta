@@ -1,0 +1,3928 @@
+fileFormatVersion: 2
+guid: 10195f3466630924da4679aff8c3eeea
+timeCreated: 1525667034
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skeleton2_0
+    21300002: skeleton2_1
+    21300004: skeleton2_2
+    21300006: skeleton2_3
+    21300008: skeleton2_4
+    21300010: skeleton2_5
+    21300012: skeleton2_6
+    21300014: skeleton2_7
+    21300016: skeleton2_8
+    21300018: skeleton2_9
+    21300020: skeleton2_10
+    21300022: skeleton2_11
+    21300024: skeleton2_12
+    21300026: skeleton2_13
+    21300028: skeleton2_14
+    21300030: skeleton2_15
+    21300032: skeleton2_16
+    21300034: skeleton2_17
+    21300036: skeleton2_18
+    21300038: skeleton2_19
+    21300040: skeleton2_20
+    21300042: skeleton2_21
+    21300044: skeleton2_22
+    21300046: skeleton2_23
+    21300048: skeleton2_24
+    21300050: skeleton2_25
+    21300052: skeleton2_26
+    21300054: skeleton2_27
+    21300056: skeleton2_28
+    21300058: skeleton2_29
+    21300060: skeleton2_30
+    21300062: skeleton2_31
+    21300064: skeleton2_32
+    21300066: skeleton2_33
+    21300068: skeleton2_34
+    21300070: skeleton2_35
+    21300072: skeleton2_36
+    21300074: skeleton2_37
+    21300076: skeleton2_38
+    21300078: skeleton2_39
+    21300080: skeleton2_40
+    21300082: skeleton2_41
+    21300084: skeleton2_42
+    21300086: skeleton2_43
+    21300088: skeleton2_44
+    21300090: skeleton2_45
+    21300092: skeleton2_46
+    21300094: skeleton2_47
+    21300096: skeleton2_48
+    21300098: skeleton2_49
+    21300100: skeleton2_50
+    21300102: skeleton2_51
+    21300104: skeleton2_52
+    21300106: skeleton2_53
+    21300108: skeleton2_54
+    21300110: skeleton2_55
+    21300112: skeleton2_56
+    21300114: skeleton2_57
+    21300116: skeleton2_58
+    21300118: skeleton2_59
+    21300120: skeleton2_60
+    21300122: skeleton2_61
+    21300124: skeleton2_62
+    21300126: skeleton2_63
+    21300128: skeleton2_64
+    21300130: skeleton2_65
+    21300132: skeleton2_66
+    21300134: skeleton2_67
+    21300136: skeleton2_68
+    21300138: skeleton2_69
+    21300140: skeleton2_70
+    21300142: skeleton2_71
+    21300144: skeleton2_72
+    21300146: skeleton2_73
+    21300148: skeleton2_74
+    21300150: skeleton2_75
+    21300152: skeleton2_76
+    21300154: skeleton2_77
+    21300156: skeleton2_78
+    21300158: skeleton2_79
+    21300160: skeleton2_80
+    21300162: skeleton2_81
+    21300164: skeleton2_82
+    21300166: skeleton2_83
+    21300168: skeleton2_84
+    21300170: skeleton2_85
+    21300172: skeleton2_86
+    21300174: skeleton2_87
+    21300176: skeleton2_88
+    21300178: skeleton2_89
+    21300180: skeleton2_90
+    21300182: skeleton2_91
+    21300184: skeleton2_92
+    21300186: skeleton2_93
+    21300188: skeleton2_94
+    21300190: skeleton2_95
+    21300192: skeleton2_96
+    21300194: skeleton2_97
+    21300196: skeleton2_98
+    21300198: skeleton2_99
+    21300200: skeleton2_100
+    21300202: skeleton2_101
+    21300204: skeleton2_102
+    21300206: skeleton2_103
+    21300208: skeleton2_104
+    21300210: skeleton2_105
+    21300212: skeleton2_106
+    21300214: skeleton2_107
+    21300216: skeleton2_108
+    21300218: skeleton2_109
+    21300220: skeleton2_110
+    21300222: skeleton2_111
+    21300224: skeleton2_112
+    21300226: skeleton2_113
+    21300228: skeleton2_114
+    21300230: skeleton2_115
+    21300232: skeleton2_116
+    21300234: skeleton2_117
+    21300236: skeleton2_118
+    21300238: skeleton2_119
+    21300240: skeleton2_120
+    21300242: skeleton2_121
+    21300244: skeleton2_122
+    21300246: skeleton2_123
+    21300248: skeleton2_124
+    21300250: skeleton2_125
+    21300252: skeleton2_126
+    21300254: skeleton2_127
+    21300256: skeleton2_128
+    21300258: skeleton2_129
+    21300260: skeleton2_130
+    21300262: skeleton2_131
+    21300264: skeleton2_132
+    21300266: skeleton2_133
+    21300268: skeleton2_134
+    21300270: skeleton2_135
+    21300272: skeleton2_136
+    21300274: skeleton2_137
+    21300276: skeleton2_138
+    21300278: skeleton2_139
+    21300280: skeleton2_140
+    21300282: skeleton2_141
+    21300284: skeleton2_142
+    21300286: skeleton2_143
+    21300288: skeleton2_144
+    21300290: skeleton2_145
+    21300292: skeleton2_146
+    21300294: skeleton2_147
+    21300296: skeleton2_148
+    21300298: skeleton2_149
+    21300300: skeleton2_150
+    21300302: skeleton2_151
+    21300304: skeleton2_152
+    21300306: skeleton2_153
+    21300308: skeleton2_154
+    21300310: skeleton2_155
+    21300312: skeleton2_156
+    21300314: skeleton2_157
+    21300316: skeleton2_158
+    21300318: skeleton2_159
+    21300320: skeleton2_160
+    21300322: skeleton2_161
+    21300324: skeleton2_162
+    21300326: skeleton2_163
+    21300328: skeleton2_164
+    21300330: skeleton2_165
+    21300332: skeleton2_166
+    21300334: skeleton2_167
+    21300336: skeleton2_168
+    21300338: skeleton2_169
+    21300340: skeleton2_170
+    21300342: skeleton2_171
+    21300344: skeleton2_172
+    21300346: skeleton2_173
+    21300348: skeleton2_174
+    21300350: skeleton2_175
+    21300352: skeleton2_176
+    21300354: skeleton2_177
+    21300356: skeleton2_178
+    21300358: skeleton2_179
+    21300360: skeleton2_180
+    21300362: skeleton2_181
+    21300364: skeleton2_182
+    21300366: skeleton2_183
+    21300368: skeleton2_184
+    21300370: skeleton2_185
+    21300372: skeleton2_186
+    21300374: skeleton2_187
+    21300376: skeleton2_188
+    21300378: skeleton2_189
+    21300380: skeleton2_190
+    21300382: skeleton2_191
+    21300384: skeleton2_192
+    21300386: skeleton2_193
+    21300388: skeleton2_194
+    21300390: skeleton2_195
+    21300392: skeleton2_196
+    21300394: skeleton2_197
+    21300396: skeleton2_198
+    21300398: skeleton2_199
+    21300400: skeleton2_200
+    21300402: skeleton2_201
+    21300404: skeleton2_202
+    21300406: skeleton2_203
+    21300408: skeleton2_204
+    21300410: skeleton2_205
+    21300412: skeleton2_206
+    21300414: skeleton2_207
+    21300416: skeleton2_208
+    21300418: skeleton2_209
+    21300420: skeleton2_210
+    21300422: skeleton2_211
+    21300424: skeleton2_212
+    21300426: skeleton2_213
+    21300428: skeleton2_214
+    21300430: skeleton2_215
+    21300432: skeleton2_216
+    21300434: skeleton2_217
+    21300436: skeleton2_218
+    21300438: skeleton2_219
+    21300440: skeleton2_220
+    21300442: skeleton2_221
+    21300444: skeleton2_222
+    21300446: skeleton2_223
+    21300448: skeleton2_224
+    21300450: skeleton2_225
+    21300452: skeleton2_226
+    21300454: skeleton2_227
+    21300456: skeleton2_228
+    21300458: skeleton2_229
+    21300460: skeleton2_230
+    21300462: skeleton2_231
+    21300464: skeleton2_232
+    21300466: skeleton2_233
+    21300468: skeleton2_234
+    21300470: skeleton2_235
+    21300472: skeleton2_236
+    21300474: skeleton2_237
+    21300476: skeleton2_238
+    21300478: skeleton2_239
+    21300480: skeleton2_240
+    21300482: skeleton2_241
+    21300484: skeleton2_242
+    21300486: skeleton2_243
+    21300488: skeleton2_244
+    21300490: skeleton2_245
+    21300492: skeleton2_246
+    21300494: skeleton2_247
+    21300496: skeleton2_248
+    21300498: skeleton2_249
+    21300500: skeleton2_250
+    21300502: skeleton2_251
+    21300504: skeleton2_252
+    21300506: skeleton2_253
+    21300508: skeleton2_254
+    21300510: skeleton2_255
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton2_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 919
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 919
+        width: 59
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 919
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 919
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_4
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 920
+        width: 59
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_5
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 921
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_6
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 923
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_7
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 923
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_8
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 923
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_9
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 923
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_10
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 923
+        width: 81
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_11
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 921
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_12
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 919
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_13
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 918
+        width: 65
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_14
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 921
+        width: 91
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_15
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 919
+        width: 54
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_16
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 919
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_17
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 920
+        width: 54
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_18
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 920
+        width: 90
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_19
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 921
+        width: 97
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_20
+      rect:
+        serializedVersion: 2
+        x: 2595
+        y: 919
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_21
+      rect:
+        serializedVersion: 2
+        x: 2727
+        y: 919
+        width: 46
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_22
+      rect:
+        serializedVersion: 2
+        x: 2856
+        y: 919
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_23
+      rect:
+        serializedVersion: 2
+        x: 2984
+        y: 920
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_24
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 915
+        width: 43
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_25
+      rect:
+        serializedVersion: 2
+        x: 3221
+        y: 917
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_26
+      rect:
+        serializedVersion: 2
+        x: 3343
+        y: 915
+        width: 64
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_27
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 911
+        width: 63
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_28
+      rect:
+        serializedVersion: 2
+        x: 3623
+        y: 919
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_29
+      rect:
+        serializedVersion: 2
+        x: 3744
+        y: 919
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_30
+      rect:
+        serializedVersion: 2
+        x: 3857
+        y: 919
+        width: 76
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_31
+      rect:
+        serializedVersion: 2
+        x: 3981
+        y: 919
+        width: 77
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_32
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 791
+        width: 89
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_33
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 791
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_34
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 791
+        width: 89
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_35
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 791
+        width: 90
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_36
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 791
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_37
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 791
+        width: 55
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_38
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 791
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_39
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 792
+        width: 59
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_40
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 793
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_41
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 795
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_42
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 795
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_43
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 795
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_44
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 791
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_45
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 789
+        width: 63
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_46
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 789
+        width: 50
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_47
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 789
+        width: 65
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_48
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 791
+        width: 78
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_49
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 791
+        width: 53
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_50
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 793
+        width: 54
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_51
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 793
+        width: 66
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_52
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 791
+        width: 78
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_53
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 791
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_54
+      rect:
+        serializedVersion: 2
+        x: 2855
+        y: 791
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_55
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 789
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_56
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 789
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_57
+      rect:
+        serializedVersion: 2
+        x: 3243
+        y: 791
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_58
+      rect:
+        serializedVersion: 2
+        x: 3367
+        y: 784
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_59
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 784
+        width: 49
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_60
+      rect:
+        serializedVersion: 2
+        x: 3615
+        y: 789
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_61
+      rect:
+        serializedVersion: 2
+        x: 3741
+        y: 789
+        width: 62
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_62
+      rect:
+        serializedVersion: 2
+        x: 3863
+        y: 789
+        width: 70
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_63
+      rect:
+        serializedVersion: 2
+        x: 3992
+        y: 787
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_64
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 665
+        width: 84
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_65
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 665
+        width: 84
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_66
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 664
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_67
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 665
+        width: 78
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_68
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 667
+        width: 53
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_69
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 663
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_70
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 663
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_71
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 663
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_72
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 664
+        width: 53
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_73
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 665
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_74
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 663
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_75
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 663
+        width: 51
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_76
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 665
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_77
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 663
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_78
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 663
+        width: 69
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_79
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 663
+        width: 102
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_80
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 665
+        width: 90
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_81
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 664
+        width: 87
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_82
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 664
+        width: 57
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_83
+      rect:
+        serializedVersion: 2
+        x: 2477
+        y: 664
+        width: 48
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_84
+      rect:
+        serializedVersion: 2
+        x: 2606
+        y: 665
+        width: 68
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_85
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 663
+        width: 61
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_86
+      rect:
+        serializedVersion: 2
+        x: 2859
+        y: 664
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_87
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 665
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_88
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 664
+        width: 81
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_89
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 664
+        width: 66
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_90
+      rect:
+        serializedVersion: 2
+        x: 3365
+        y: 664
+        width: 59
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_91
+      rect:
+        serializedVersion: 2
+        x: 3493
+        y: 663
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_92
+      rect:
+        serializedVersion: 2
+        x: 3619
+        y: 659
+        width: 52
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_93
+      rect:
+        serializedVersion: 2
+        x: 3747
+        y: 659
+        width: 52
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_94
+      rect:
+        serializedVersion: 2
+        x: 3885
+        y: 661
+        width: 44
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_95
+      rect:
+        serializedVersion: 2
+        x: 4015
+        y: 661
+        width: 42
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_96
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 527
+        width: 52
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_97
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 526
+        width: 52
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_98
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 525
+        width: 51
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_99
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 525
+        width: 48
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_100
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 536
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_101
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 535
+        width: 55
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_102
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 536
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_103
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 539
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_104
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 539
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_105
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 536
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_106
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 535
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_107
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 535
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_108
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 541
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_109
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 539
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_110
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 539
+        width: 92
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_111
+      rect:
+        serializedVersion: 2
+        x: 1961
+        y: 539
+        width: 90
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_112
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 531
+        width: 66
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_113
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 539
+        width: 86
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_114
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 536
+        width: 92
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_115
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 536
+        width: 87
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_116
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 525
+        width: 50
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_117
+      rect:
+        serializedVersion: 2
+        x: 2733
+        y: 525
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_118
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 525
+        width: 46
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_119
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 528
+        width: 46
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_120
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 528
+        width: 73
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_121
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 536
+        width: 85
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_122
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 535
+        width: 75
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_123
+      rect:
+        serializedVersion: 2
+        x: 3497
+        y: 537
+        width: 60
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_124
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 537
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_125
+      rect:
+        serializedVersion: 2
+        x: 3753
+        y: 535
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_126
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 533
+        width: 67
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_127
+      rect:
+        serializedVersion: 2
+        x: 4009
+        y: 533
+        width: 73
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_128
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 397
+        width: 60
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_129
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 397
+        width: 63
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_130
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 398
+        width: 63
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_131
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 397
+        width: 63
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_132
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 408
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_133
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 405
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_134
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 403
+        width: 61
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_135
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 405
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_136
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 408
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_137
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 408
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_138
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 411
+        width: 84
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_139
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 411
+        width: 74
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_140
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 407
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_141
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 407
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_142
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 407
+        width: 88
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_143
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 395
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_144
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 395
+        width: 46
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_145
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 399
+        width: 52
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_146
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 407
+        width: 86
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_147
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 407
+        width: 92
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_148
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 397
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_149
+      rect:
+        serializedVersion: 2
+        x: 2733
+        y: 397
+        width: 54
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_150
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 397
+        width: 46
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_151
+      rect:
+        serializedVersion: 2
+        x: 2991
+        y: 397
+        width: 44
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_152
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 392
+        width: 45
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_153
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 400
+        width: 63
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_154
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 400
+        width: 67
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_155
+      rect:
+        serializedVersion: 2
+        x: 3507
+        y: 401
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_156
+      rect:
+        serializedVersion: 2
+        x: 3619
+        y: 407
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_157
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 407
+        width: 71
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_158
+      rect:
+        serializedVersion: 2
+        x: 3877
+        y: 407
+        width: 84
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_159
+      rect:
+        serializedVersion: 2
+        x: 4008
+        y: 407
+        width: 85
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_160
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 275
+        width: 91
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_161
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 275
+        width: 91
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_162
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 272
+        width: 91
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_163
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 275
+        width: 90
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_164
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 272
+        width: 52
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_165
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 273
+        width: 54
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_166
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 273
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_167
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 272
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_168
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 272
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_169
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 275
+        width: 56
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_170
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 280
+        width: 73
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_171
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 275
+        width: 54
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_172
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 275
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_173
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 275
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_174
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 267
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_175
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 265
+        width: 67
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_176
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 273
+        width: 78
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_177
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 267
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_178
+      rect:
+        serializedVersion: 2
+        x: 2359
+        y: 272
+        width: 52
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_179
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 277
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_180
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 275
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_181
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 275
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_182
+      rect:
+        serializedVersion: 2
+        x: 2837
+        y: 277
+        width: 75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_183
+      rect:
+        serializedVersion: 2
+        x: 2979
+        y: 275
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_184
+      rect:
+        serializedVersion: 2
+        x: 3103
+        y: 269
+        width: 58
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_185
+      rect:
+        serializedVersion: 2
+        x: 3245
+        y: 265
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_186
+      rect:
+        serializedVersion: 2
+        x: 3373
+        y: 263
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_187
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 269
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_188
+      rect:
+        serializedVersion: 2
+        x: 3629
+        y: 277
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_189
+      rect:
+        serializedVersion: 2
+        x: 3751
+        y: 277
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_190
+      rect:
+        serializedVersion: 2
+        x: 3877
+        y: 272
+        width: 78
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_191
+      rect:
+        serializedVersion: 2
+        x: 4005
+        y: 275
+        width: 74
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_192
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 149
+        width: 86
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_193
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 149
+        width: 84
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_194
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 149
+        width: 83
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_195
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 149
+        width: 83
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_196
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 145
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_197
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 149
+        width: 53
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_198
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 144
+        width: 59
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_199
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 149
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_200
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 145
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_201
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 143
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_202
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 147
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_203
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 143
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_204
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 149
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_205
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 149
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_206
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 136
+        width: 70
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_207
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 149
+        width: 106
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_208
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 151
+        width: 92
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_209
+      rect:
+        serializedVersion: 2
+        x: 2187
+        y: 151
+        width: 89
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_210
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 143
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_211
+      rect:
+        serializedVersion: 2
+        x: 2479
+        y: 143
+        width: 44
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_212
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 149
+        width: 74
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_213
+      rect:
+        serializedVersion: 2
+        x: 2709
+        y: 149
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_214
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 151
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_215
+      rect:
+        serializedVersion: 2
+        x: 2971
+        y: 151
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_216
+      rect:
+        serializedVersion: 2
+        x: 3081
+        y: 149
+        width: 80
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_217
+      rect:
+        serializedVersion: 2
+        x: 3227
+        y: 143
+        width: 62
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_218
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 136
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_219
+      rect:
+        serializedVersion: 2
+        x: 3488
+        y: 135
+        width: 59
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_220
+      rect:
+        serializedVersion: 2
+        x: 3631
+        y: 151
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_221
+      rect:
+        serializedVersion: 2
+        x: 3761
+        y: 153
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_222
+      rect:
+        serializedVersion: 2
+        x: 3887
+        y: 149
+        width: 49
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_223
+      rect:
+        serializedVersion: 2
+        x: 4015
+        y: 147
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_224
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 27
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_225
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 24
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_226
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 23
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_227
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 25
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_228
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 25
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_229
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 28
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_230
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 24
+        width: 58
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_231
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 24
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_232
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 29
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_233
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 23
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_234
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 21
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_235
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 23
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_236
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 24
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_237
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 16
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_238
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 24
+        width: 99
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_239
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 24
+        width: 99
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_240
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 27
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_241
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 25
+        width: 90
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_242
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 27
+        width: 91
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_243
+      rect:
+        serializedVersion: 2
+        x: 2445
+        y: 24
+        width: 83
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_244
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 27
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_245
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 24
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_246
+      rect:
+        serializedVersion: 2
+        x: 2856
+        y: 24
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_247
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 27
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_248
+      rect:
+        serializedVersion: 2
+        x: 3088
+        y: 23
+        width: 72
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_249
+      rect:
+        serializedVersion: 2
+        x: 3208
+        y: 23
+        width: 81
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_250
+      rect:
+        serializedVersion: 2
+        x: 3341
+        y: 21
+        width: 75
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_251
+      rect:
+        serializedVersion: 2
+        x: 3483
+        y: 15
+        width: 62
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_252
+      rect:
+        serializedVersion: 2
+        x: 3624
+        y: 24
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_253
+      rect:
+        serializedVersion: 2
+        x: 3757
+        y: 25
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_254
+      rect:
+        serializedVersion: 2
+        x: 3871
+        y: 25
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton2_255
+      rect:
+        serializedVersion: 2
+        x: 3993
+        y: 27
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
