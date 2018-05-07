@@ -23,17 +23,18 @@ public class Blob_At_Trig : MonoBehaviour
         if (other.tag == "Player")//Checks for PLayer
         {
             /* **Make Explode** */
-            GetComponentInParent<BlobAI>().Exploding = true;
+            
             GetComponentInParent<BlobAI>().dissolve = 150 * Time.deltaTime;
 
             //new WaitForSeconds(.4f);
             StartCoroutine(turnRed());
             motion.SetBool("Explosion", true);
-                
+            GetComponentInParent<BlobAI>().Exploding = true;
+
             GetComponentInParent<BlobAI>().curr_hp = 0;
             new WaitForSeconds(.2f);
             GetComponentInParent<BlobAI>().Exploded = true;
-            GetComponentInParent<BlobAI>().Exploding = false;
+            //GetComponentInParent<BlobAI>().Exploding = false;
             
         }
 

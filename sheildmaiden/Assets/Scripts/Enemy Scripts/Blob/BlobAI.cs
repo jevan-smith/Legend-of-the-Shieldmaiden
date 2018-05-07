@@ -90,7 +90,7 @@ public class BlobAI : MonoBehaviour
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         
 
-        damage = 3;
+        //damage = 1;
 
         sounds = GetComponents<AudioSource>();
         noise1 = sounds[0];
@@ -127,12 +127,14 @@ public class BlobAI : MonoBehaviour
         shaderGUItext = Shader.Find("GUI/Text Shader");
         shaderSpritesDefault = Shader.Find("Sprites/Default"); // or whatever
 
+        transform.Find("Blob_Attack_Box").GetComponent<CircleCollider2D>().enabled = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(timer);
+        //Debug.Log(timer);
         target2 = GameObject.FindWithTag("Player").transform;
 
         if (!Exploding)//If not attacking(attackin==false) do movement stuff below
@@ -259,6 +261,11 @@ public class BlobAI : MonoBehaviour
             noise1.Play();
             hit_sound = false;
         }
+        if (Exploding)
+        {
+            transform.Find("Blob_Attack_Box").GetComponent<CircleCollider2D>().enabled = true;
+        }
+        
 
     }
 
@@ -271,7 +278,7 @@ public class BlobAI : MonoBehaviour
         {
             target = other.transform;
             speed = run_speed;
-            print("Detected");
+            //print("Detected");
         }
 
     }

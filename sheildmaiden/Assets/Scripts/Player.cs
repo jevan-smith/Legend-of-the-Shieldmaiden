@@ -351,12 +351,14 @@ public class Player : Entity {
             }    
 
         }
-        
-        else if (other.tag == "Explosion_Radius")
+
+        if (other.tag == "Explosion_Radius")
         {
-            if (Player_Health != 0 && /*GameObject.Find("Exploding Blob").*/GetComponent<BlobAI>().Exploding)
+            //print("Exploded1");
+            if (Player_Health != 0)
             {
-                GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth -= /*GameObject.Find("Exploding Blob").*/GetComponent<BlobAI>().damage;
+                //print("Exploded2");
+                GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth -= GameObject.Find("Exploding Blob").GetComponent<BlobAI>().damage;
                 Player_Health = GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth;
 
                 blink = true;
@@ -372,6 +374,7 @@ public class Player : Entity {
                 }
             }
         }
+
 
         if (other.tag == "Arrow_Pickup") //Checks for weapon hit
         {
