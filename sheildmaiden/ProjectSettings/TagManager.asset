@@ -18,6 +18,8 @@ TagManager:
   - door
   - doorRadius
   - door2
+  - Boss_Nest
+  - Blob_Missile
   layers:
   - Default
   - TransparentFX
