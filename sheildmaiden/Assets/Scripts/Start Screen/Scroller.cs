@@ -64,7 +64,7 @@ public class Scroller : MonoBehaviour {
 			words.text = "aAAAAAAAAAAAAAAAAAAAA";
 			break;
 		case 8:
-			SceneManager.LoadScene("NeverUnload", 0);
+			SceneManager.LoadScene("Start Screen", 0);
 			break;
 		default:
 			break;
