@@ -9,8 +9,8 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
 - path: Assets/Scenes/NeverUnload.unity
-  isLoaded: 1
-  isActive: 1
+  isLoaded: 0
+  isActive: 0
 - path: Assets/Scenes/Death_Screen.unity
   isLoaded: 0
   isActive: 0
@@ -20,3 +20,9 @@ sceneSetups:
 - path: Assets/Scenes/level5.unity
   isLoaded: 0
   isActive: 0
+- path: Assets/Scenes/Credits.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Scenes/Start Screen.unity
+  isLoaded: 1
+  isActive: 1

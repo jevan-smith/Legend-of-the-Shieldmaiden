@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Boss : MonoBehaviour {
+public class Boss : MonoBehaviour
+{
     private Vector2 Start_pos;
     private Vector2 Player_pos;
     [HideInInspector]
@@ -60,7 +62,8 @@ public class Boss : MonoBehaviour {
     public bool attacking = false;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         //Fetch the SpriteRenderer from the GameObject
         this.transform.GetChild(1).GetComponent<CircleCollider2D>().enabled = false;
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
@@ -83,18 +86,20 @@ public class Boss : MonoBehaviour {
         shaderGUItext = Shader.Find("GUI/Text Shader");
         shaderSpritesDefault = Shader.Find("Sprites/Default"); // or whatever
     }
-	
-	// Update is called once per frame
-	void Update () {
-        
-        Player_pos = new Vector2 (GameObject.Find("Player").transform.position.x, GameObject.Find("Player").transform.position.y);
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        int y = SceneManager.GetActiveScene().buildIndex;
+        Player_pos = new Vector2(GameObject.Find("Player").transform.position.x, GameObject.Find("Player").transform.position.y);
         if (!InRange && !dead && !attacking)
         {
             if (Nest_dead && firstmove)
             {
                 motion.SetInteger("Direction", 1);
                 this.transform.position = Vector2.MoveTowards(this.transform.position, Start_pos, .7f * Time.deltaTime);
-                if(Vector2.Distance(this.transform.position, Start_pos) == 0)
+                if (Vector2.Distance(this.transform.position, Start_pos) == 0)
                 {
                     firstmove = false;
                 }
@@ -105,7 +110,7 @@ public class Boss : MonoBehaviour {
                 SetDir(Player_pos.x, Player_pos.y);
                 this.transform.position = Vector2.MoveTowards(this.transform.position, Player_pos, speed * Time.deltaTime);
 
-                if (!dead && !blink) 
+                if (!dead && !blink)
                 {
 
                     if (arrowHit2 == true)
@@ -146,15 +151,15 @@ public class Boss : MonoBehaviour {
         }
         if (InRange && !dead)
         {
-            
+
             SetDir(Player_pos.x, Player_pos.y);
 
-            
+
         }
         if (blink == true)
         {
             StartCoroutine(turnRed());
-            
+
         }
         if (hit_sound == true)
         {
@@ -163,21 +168,22 @@ public class Boss : MonoBehaviour {
         }
         if (dead)
         {
-            if(!dead_sound)
+            if (!dead_sound)
             {
                 noise1.Play();
                 dead_sound = true;
             }
             motion.SetBool("Dead", true);
             Object.Destroy(gameObject, 2);
-            
+            SceneManager.UnloadSceneAsync(y);
+            StartCoroutine(action());
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
-            
+
             InRange = true;
             attacking = true;
             StartCoroutine(pauseAction());
@@ -194,7 +200,7 @@ public class Boss : MonoBehaviour {
         }
     }
 
-    private void SetDir (float headingx, float headingy)
+    private void SetDir(float headingx, float headingy)
     {
         float x = transform.position.x - headingx;
         float y = transform.position.y - headingy;
@@ -215,7 +221,7 @@ public class Boss : MonoBehaviour {
             {
                 motion.SetInteger("Direction", 2);
             }
-            else if(y > 0)
+            else if (y > 0)
             {
                 motion.SetInteger("Direction", 7);
             }
@@ -277,5 +283,11 @@ public class Boss : MonoBehaviour {
             yield return new WaitForSeconds(1);//Waits 1 scond before starting loop again.
 
         }
+    }
+    private IEnumerator action()
+    {
+        SceneManager.UnloadSceneAsync("NeverUnload");
+        SceneManager.LoadSceneAsync("Credits", 0);
+        yield return new WaitForSeconds(1);
     }
 }
