@@ -2282,7 +2282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a164b93ca84d51a4e9e5619c7ab54311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level_to_load: mainScene
+  level_to_load: level5
 --- !u!4 &703274252
 Transform:
   m_ObjectHideFlags: 0
@@ -5807,8 +5807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b507eca9669be743a693adb6886d30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _MaxHealth: 0
-  _CurHealth: 0
+  _MaxHealth: 8
+  _CurHealth: 8
 --- !u!212 &1363807137
 SpriteRenderer:
   m_ObjectHideFlags: 0

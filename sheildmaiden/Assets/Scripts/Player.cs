@@ -103,7 +103,7 @@ public class Player : Entity {
         int y = SceneManager.GetActiveScene().buildIndex;
         Player_Health = GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth;
 
-        if (Player_Health == 0)
+        if (Player_Health <= 0)
         {
             SceneManager.UnloadSceneAsync(y);
             SceneManager.UnloadSceneAsync("NeverUnload");

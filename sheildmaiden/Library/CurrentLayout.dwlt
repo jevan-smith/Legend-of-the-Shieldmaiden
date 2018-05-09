@@ -13,14 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 13
-    y: 51
+    x: 67
+    y: 45
     width: 1615
     height: 977
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1615
     height: 977
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1615
     height: 927
-  m_MinSize: {x: 685, y: 321}
-  m_MaxSize: {x: 16010, y: 8042}
+  m_MinSize: {x: 687, y: 492}
+  m_MaxSize: {x: 16012, y: 14042}
   vertical: 0
-  controlID: 14664
+  controlID: 7845
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1191
     height: 927
-  m_MinSize: {x: 408, y: 321}
-  m_MaxSize: {x: 12008, y: 8042}
+  m_MinSize: {x: 410, y: 492}
+  m_MaxSize: {x: 12010, y: 14042}
   vertical: 1
-  controlID: 14665
+  controlID: 7846
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -155,10 +155,10 @@ MonoBehaviour:
     y: 0
     width: 1191
     height: 613
-  m_MinSize: {x: 408, y: 200}
-  m_MaxSize: {x: 12008, y: 4021}
+  m_MinSize: {x: 410, y: 221}
+  m_MaxSize: {x: 12010, y: 4021}
   vertical: 0
-  controlID: 14666
+  controlID: 7847
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,8 +177,8 @@ MonoBehaviour:
     y: 0
     width: 253
     height: 613
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -252,16 +252,16 @@ MonoBehaviour:
     y: 613
     width: 1191
     height: 314
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 2
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -309,8 +309,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 788
-    y: 100
+    x: 842
+    y: 94
     width: 414
     height: 592
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -322,10 +322,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -207
-    m_HBaseRangeMax: 207
-    m_VBaseRangeMin: -287.5
-    m_VBaseRangeMax: 287.5
+    m_HBaseRangeMin: -103.5
+    m_HBaseRangeMax: 103.5
+    m_VBaseRangeMin: -143.75
+    m_VBaseRangeMax: 143.75
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -344,7 +344,7 @@ MonoBehaviour:
       y: 17
       width: 414
       height: 575
-    m_Scale: {x: 1, y: 1}
+    m_Scale: {x: 2, y: 2}
     m_Translation: {x: 207, y: 287.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -352,15 +352,15 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -207
-      y: -287.5
-      width: 414
-      height: 575
+      x: -103.5
+      y: -143.75
+      width: 207
+      height: 287.5
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 2
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 414, y: 592}
+  m_LastWindowPixelSize: {x: 828, y: 1184}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -386,16 +386,16 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 13
-    y: 100
+    x: 67
+    y: 94
     width: 251
     height: 592
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 92fbffff
-    m_LastClickedID: -1134
-    m_ExpandedIDs: 8894f8ffbe0cfafff05afbff92fbffff94fbffff96fbffff9afbffff9cfbffff9efbffff00000000c8480000acb6000022c60000b0cd000046180100
+    m_SelectedIDs: f09affff
+    m_LastClickedID: -25872
+    m_ExpandedIDs: 30e4fdffec9afffff49afffff89affff00000000066f000098a900006ab5000022cd000004010100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -415,10 +415,7 @@ MonoBehaviour:
     m_SearchString: 
   m_ExpandedScenes:
   - mainScene
-  - level2
   - level 3
-  - Death_Screen
-  - level4
   - level5
   m_CurrenRootInstanceID: 0
   m_Locked: 0
@@ -445,20 +442,20 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 268
-    y: 100
+    x: 322
+    y: 94
     width: 516
     height: 592
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 632.5687086383402
+  lastFramingTime: 577.7626329660416
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -113.15629, y: -320.0798, z: -0.09050532}
+    m_Target: {x: 237.59052, y: 299.52505, z: -2.7566543}
     speed: 2
-    m_Value: {x: -113.15629, y: -320.0798, z: -0.09050532}
+    m_Value: {x: 237.59052, y: 299.52505, z: -2.7566543}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -486,9 +483,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 11.533346
+    m_Target: 236.89339
     speed: 2
-    m_Value: 11.533346
+    m_Value: 236.89339
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -522,8 +519,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 13
-    y: 713
+    x: 67
+    y: 707
     width: 1189
     height: 293
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -539,19 +536,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Enemy Scripts/Bat
+    - Assets/Scripts/Enemy Scripts/Boss_Fight
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Enemy Scripts/Bat
+  - Assets/Scripts/Enemy Scripts/Boss_Fight
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\milte\Desktop\LegendFinal\sheildmaiden
+  m_LastProjectPath: /Users/jevansmith/Desktop/Sheildmaiden/Legend-of-the-Sheildmaiden/sheildmaiden
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 78390000
-    m_LastClickedID: 14712
-    m_ExpandedIDs: 00000000c227000054290000762e0000c03d000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 845f0000
+    m_LastClickedID: 24452
+    m_ExpandedIDs: 00000000445b0000805b0000485d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -579,7 +576,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c2270000c03d000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000445b0000805b0000485d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -604,8 +601,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 92fbffff
-    m_LastClickedInstanceID: -1134
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000043000005a360000823600009238000066280000e27b0000ea7b0000027c0000866400007e640000f27b0000ca3a000026290000c23800008c3d0000002c0000a0440000022f0000000000008c280000f02e00007c390000def1fdfff62e0000ae2b0000bc2b0000
     m_RenameOverlay:
@@ -656,10 +653,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 13
-    y: 682
+    x: 67
+    y: 707
     width: 1189
-    height: 324
+    height: 293
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &18
 MonoBehaviour:
@@ -683,7 +680,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 13
+    x: 41
     y: 713
     width: 1189
     height: 293
@@ -811,8 +808,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 13
-    y: 713
+    x: 67
+    y: 707
     width: 1189
     height: 293
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -828,19 +825,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Animations/boss-dude
+    - Assets/Prefab
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Animations/boss-dude
+  - Assets/Prefab
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\milte\Desktop\LegendFinal\sheildmaiden
+  m_LastProjectPath: /Users/jevansmith/Desktop/Sheildmaiden/Legend-of-the-Sheildmaiden/sheildmaiden
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a400000
-    m_LastClickedID: 16474
-    m_ExpandedIDs: 00000000c2270000c03d000000ca9a3bffffff7f
+    m_SelectedIDs: 105f0000
+    m_LastClickedID: 24336
+    m_ExpandedIDs: 00000000445b0000805b0000485d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -868,7 +865,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c2270000c03d000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000445b0000805b0000485d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -893,8 +890,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: d0490000
-    m_LastClickedInstanceID: 18896
+    m_SelectedInstanceIDs: b2350000
+    m_LastClickedInstanceID: 13746
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -945,8 +942,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1206
-    y: 100
+    x: 1260
+    y: 94
     width: 422
     height: 906
   m_PersistentViewDataDictionary: {fileID: 0}
