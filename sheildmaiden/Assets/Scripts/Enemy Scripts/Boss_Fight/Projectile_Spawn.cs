@@ -57,7 +57,7 @@ public class Projectile_Spawn : MonoBehaviour {
         if (other.tag == "Player")
         {
             going_to = this.transform.position;
-            //GameObject.Find("Explosion").GetComponentInChildren<CircleCollider2D>().enabled = true;
+            
 
             
             Explode();
@@ -84,7 +84,7 @@ public class Projectile_Spawn : MonoBehaviour {
         this.transform.GetChild(0).GetComponent<CircleCollider2D>().enabled = true;
         noise1.Play();
         this.GetComponent<Animator>().SetBool("Explode", true);
-        //GameObject.Find("Explosion").GetComponentInChildren<CircleCollider2D>().enabled = false;
+        
         Object.Destroy(gameObject, .5f);
         GameObject.Find("Boss_Turret_Nest").GetComponent<Mother>().number_of -= 1;
     }
