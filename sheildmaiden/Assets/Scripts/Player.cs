@@ -172,6 +172,15 @@ public class Player : Entity {
             }
         }
 
+
+        //Transports to castle entrance ****DELETE FOR FINAL*****
+        if(Input.GetKeyDown(KeyCode.Alpha7) && isAttacking == false)
+        {
+            this.transform.position = new Vector2(76.83f, -87.22f);
+        }
+        //*********************************************************
+
+
         if (Input.GetKeyDown(KeyCode.J) && isAttacking == false)
         {
             attackRoutine = StartCoroutine(Attack());
@@ -375,6 +384,29 @@ public class Player : Entity {
             }
         }
 
+
+        if (other.tag == "Boss_Hit")
+        {
+            
+            if (Player_Health != 0)
+            {
+                
+                GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth -= GameObject.Find("Boss").GetComponent<Boss>().damage;
+                Player_Health = GameObject.Find("Health").GetComponent<PlayerH>()._CurHealth;
+
+                blink = true;
+                if (blink == true)
+                {
+                    StartCoroutine(blinking());
+                }
+                hit_sound = true;
+                if (hit_sound == true)
+                {
+                    noise1.Play();
+                    hit_sound = false;
+                }
+            }
+        }
 
         if (other.tag == "Arrow_Pickup") //Checks for weapon hit
         {

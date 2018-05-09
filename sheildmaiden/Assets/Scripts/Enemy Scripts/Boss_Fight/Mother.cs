@@ -15,8 +15,19 @@ public class Mother : MonoBehaviour {
     public int number_of;
     private int cannon_num;
 
-	// Use this for initialization
-	void Start () {
+    [HideInInspector]
+    public AudioSource[] sounds;
+    [HideInInspector]
+    public AudioSource noise1;
+    [HideInInspector]
+    public AudioSource noise2;
+
+    // Use this for initialization
+    void Start () {
+        sounds = GetComponents<AudioSource>();
+        noise1 = sounds[0];
+        noise2 = sounds[1];
+
         shooting = false;
         cannon_num = 1;
         number_of = 0;
@@ -26,7 +37,7 @@ public class Mother : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (shooting == true && GetComponent<Turret_Nest>().health >= 0)
+        if (shooting == true && GetComponent<Turret_Nest>().health > 0)
         {
             StartCoroutine(Spawn());
         }
@@ -42,8 +53,9 @@ public class Mother : MonoBehaviour {
                 clone = Instantiate(Blob_Ammo, cannon1_pos, Quaternion.identity) as GameObject;
                 cannon_num += 1;
                 number_of++;
+                noise1.Play();
 
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(1);
                 //shooting = true;
             }
             else if (cannon_num == 2)
@@ -51,14 +63,15 @@ public class Mother : MonoBehaviour {
                 clone2 = Instantiate(Blob_Ammo2, cannon2_pos, Quaternion.identity) as GameObject;
                 cannon_num -= 1;
                 number_of++;
-                yield return new WaitForSeconds(3);
+                noise1.Play();
+                yield return new WaitForSeconds(1);
                 //shooting = true;
             }
 
         }
         else
         {
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(1);
             //shooting = true;
         }
         shooting = true;
