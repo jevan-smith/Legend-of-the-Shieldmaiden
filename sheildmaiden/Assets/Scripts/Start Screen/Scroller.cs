@@ -11,7 +11,7 @@ public class Scroller : MonoBehaviour {
 	private Camera cam;
 	private bool hasBeenDown = false;
 	private float waitTime = 4f;
-	private float waitTime2 = 8f;
+	private float waitTime2 = 0f;
 	private int state;
 	// Use this for initialization
 	void Start () {
@@ -24,7 +24,7 @@ public class Scroller : MonoBehaviour {
 		if (Input.anyKeyDown) {
 			hasBeenDown = true;
 			//start fade
-			state = 9;
+			state = 99;
 			words.text = "Loading in " + String.Format("{0:F2}", waitTime) + " seconds.";
 		}
 		if(hasBeenDown){
@@ -37,33 +37,65 @@ public class Scroller : MonoBehaviour {
 		}
 		if (waitTime2 <= 0) {
 			state++;
-			waitTime2 = 4f;
+			waitTime2 = 10f;
 		} else {
 			waitTime2 -= Time.deltaTime;
 		}
 		switch (state) {
 		case 1:
-			words.text = "aAAAAAAAAAAAAAAAAAAAA";
+			words.text = "There lives an evil" + "\r\n" +
+				"dictator, who rules" + "\r\n" +
+				"over the land of" + "\r\n" +
+				"Enslagsted with an" + "\r\n" +
+				"iron fist.";
 			break;	
 		case 2:
-			words.text = "aAAAAAAAAAAAAAAAAAAAA";
+			words.text = "One day you decided " + "\r\n" +
+				"that enough was enough" + "\r\n" +
+				"and you would stand" + "\r\n" +
+				"up to his rule.";
 			break;
 		case 3:
-			words.text = "aAAAAAAAAAAAAAAAAAAAA";
+			words.text = "Brimming with courage" + "\r\n" +
+				"and a sense of" + "\r\n" +
+				"responsibility you set" + "\r\n" +
+				"out to end him and " + "\r\n" +
+				"restore justice to the"  + "\r\n" +
+				"land." ;
 			break;
 		case 4:
-			words.text = "aAAAAAAAAAAAAAAAAAAAA";
+			words.text = "You barely escaped with" + "\r\n" +
+				"your life.";
 			break;
 		case 5:
-			words.text = "aAAAAAAAAAAAAAAAAAAAA";
+			words.text = "Enraged at your attack," + "\r\n" +
+				"he decided his best" + "\r\n" +
+				"course of action would " + "\r\n" +
+				"be to burn down your" + "\r\n" +
+				"village, and the " + "\r\n" +
+				"surrounding towns for" + "\r\n" +
+				"good measure.";
 			break;
 		case 6:
-			words.text = "aAAAAAAAAAAAAAAAAAAAA";
+			words.text = "It has been 2 years" + "\r\n" +
+				"since that day. You've" + "\r\n" +
+				"trained assiduously " + "\r\n" +
+				"and in the intervening"  + "\r\n" +
+				"time managed to acquire " + "\r\n" +
+				"a sailing ship.";
 			break;
 		case 7:
-			words.text = "aAAAAAAAAAAAAAAAAAAAA";
+			words.text = "You've managed to track" + "\r\n" +
+				"the villain's second " + "\r\n" +
+				"lieutenant to an island" + "\r\n" +
+				"just north of where " + "\r\n" +
+				"you've been hiding out." ;
 			break;
 		case 8:
+			words.text = "Go forth, and bring an" + "\r\n" +
+			"end to their evil ways!";
+			break;
+		case 9:
 			SceneManager.LoadScene("Start Screen", 0);
 			break;
 		default:
