@@ -234,7 +234,6 @@ GameObject:
   m_Component:
   - component: {fileID: 439124015}
   - component: {fileID: 439124014}
-  - component: {fileID: 439124016}
   m_Layer: 0
   m_Name: titleScreen
   m_TagString: Untagged
@@ -335,17 +334,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &439124016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 439124013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ee886f75eb523046b293e5db27df809, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &595492281
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +387,7 @@ GameObject:
   - component: {fileID: 669803289}
   - component: {fileID: 669803288}
   - component: {fileID: 669803287}
-  - component: {fileID: 669803290}
+  - component: {fileID: 669803291}
   m_Layer: 5
   m_Name: Start Text
   m_TagString: Untagged
@@ -480,7 +468,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 669803285}
---- !u!114 &669803290
+--- !u!114 &669803291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -488,9 +476,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 669803285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a82a174f9b18148a5e261563de40c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 89947eba58e84ec45bc7f553f37193eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textToUse: {fileID: 669803288}
+  fadeOutTexture: {fileID: 2800000, guid: e6e3980568d4e8f48bdec6c4b038bf17, type: 3}
+  fadeSpeed: 0.9
 --- !u!1 &1920251931
 GameObject:
   m_ObjectHideFlags: 0

@@ -279,7 +279,7 @@ public class Player : Entity {
 
             Vector3 arrowOffset = transform.position;
             
-            //noise2.Play();
+            noise2.Play();
 
             //facing right
             if (animator.GetFloat("x") == 1.0 && animator.GetFloat("y") == 0.0)

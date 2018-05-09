@@ -26,3 +26,6 @@ sceneSetups:
 - path: Assets/Scenes/Start Screen.unity
   isLoaded: 1
   isActive: 1
+- path: Assets/Scenes/Scroll.unity
+  isLoaded: 0
+  isActive: 0
