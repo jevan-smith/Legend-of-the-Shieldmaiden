@@ -174,10 +174,10 @@ public class Player : Entity {
 
 
         //Transports to castle entrance ****DELETE FOR FINAL*****
-        if(Input.GetKeyDown(KeyCode.Alpha7) && isAttacking == false)
+        /*if(Input.GetKeyDown(KeyCode.Alpha7) && isAttacking == false)
         {
             this.transform.position = new Vector2(76.83f, -87.22f);
-        }
+        }*/
         //*********************************************************
 
 

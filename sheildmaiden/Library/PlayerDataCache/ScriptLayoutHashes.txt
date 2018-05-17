@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Admin/Desktop/test.exe
+C:/Users/Admin/Desktop/Shieldmaiden.exe
 SceneListBegin?
 Assets/Scenes/Start Screen.unity
 Assets/Scenes/NeverUnload.unity
