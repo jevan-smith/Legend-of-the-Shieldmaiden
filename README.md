@@ -33,4 +33,4 @@ should build using windows, mac, or linux
 - L switch arrow type
 
 ## Expected Outputs Below
-<img src="https://media.giphy.com/media/l4Fduq3ucfCTwosodF/giphy.gif" width="40" height="40" />
+![Alt Text](https://giphy.com/gifs/l4Fduq3ucfCTwosodF/html5)
