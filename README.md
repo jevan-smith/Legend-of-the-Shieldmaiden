@@ -10,7 +10,6 @@ Sean Multenberger, Trent Rhodes
 
 ## Requirements
 Download Unity version 2017.4.0f1 or later, than open the project folder from your unity launcher
-should build using windows, mac, or linux
 
 ## Features
 - [x] Overworld
