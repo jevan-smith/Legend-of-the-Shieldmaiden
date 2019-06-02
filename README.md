@@ -9,7 +9,7 @@ Sean Multenberger, Trent Rhodes
 4. Use of contemporary tool sets for collaborative software engineering efforts, such as git
 
 ## Requirements
-Download Unity version 2017.4.0f1, than open the project folder from your unity launcher
+Download Unity version 2017.4.0f1 or later, than open the project folder from your unity launcher
 should build using windows, mac, or linux
 
 ## Features
