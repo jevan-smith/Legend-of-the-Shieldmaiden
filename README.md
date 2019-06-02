@@ -13,7 +13,7 @@ Download Unity version 2017.4.0f1, than open the project folder from your unity 
 should build using windows, mac, or linux
 
 ## Features
-- [x] over world
+- [x] Overworld
 - [x] 2 Dungeons
 - [x] Normal Arrows
 - [x] Ice Arrows
