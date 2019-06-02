@@ -6,9 +6,7 @@ Sean Multenberger, Trent Rhodes
 1. Learn how to make a video game using Unity along with C#
 2. Translation of software requirements to software deliverables
 3. Methodologies for executing on an end-to-end implementation of consumer software in a collaborative environment
-4. Contemporary architectures for building consumer applications
-5. Information architecture and user interface design (conceptual)
-6. Contemporary tool sets for collaborative software engineering efforts
+4. Use of contemporary tool sets for collaborative software engineering efforts, such as git
 
 ## Requirements
 Download Unity version 2017.4.0f1, than open the project folder from your unity launcher
