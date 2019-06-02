@@ -21,7 +21,7 @@ Download Unity version 2017.4.0f1 or later, than open the project folder from yo
 - [x] Boss Fight
 - [ ] Quest Giver
 - [ ] Ingame instructions
-- [ ] Ingame options menu
+- [ ] Ingame option menu
 
 ## Insturctions
 - WASD or Arrow keys to move
