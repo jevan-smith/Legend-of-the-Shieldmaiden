@@ -29,6 +29,6 @@ Download Unity version 2017.4.0f1 or later, than open the project folder from yo
 - K arrow attack
 - L switch arrow type
 
-## Expected Outputs Below
+## Game Gifs
 ![demo gif1](ezgif-2-81c767a3c833.gif)
 ![demo gif2](ezgif-2-2062d55724cf.gif)
