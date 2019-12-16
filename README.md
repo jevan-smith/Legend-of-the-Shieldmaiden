@@ -1,6 +1,5 @@
-## Authors
-Made by: Jevan Smith, Spencer Greco, 
-Sean Multenberger, Trent Rhodes
+![demo gif1](ezgif-2-81c767a3c833.gif)
+![demo gif2](ezgif-2-2062d55724cf.gif)
 
 ## Project Goals
 1. Learn how to make a video game using Unity along with C#
@@ -28,7 +27,3 @@ Download Unity version 2017.4.0f1 or later, than open the project folder from yo
 - J sword attack
 - K arrow attack
 - L switch arrow type
-
-## Game Gifs
-![demo gif1](ezgif-2-81c767a3c833.gif)
-![demo gif2](ezgif-2-2062d55724cf.gif)
