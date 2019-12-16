@@ -1,5 +1,4 @@
 ![demo gif1](ezgif-2-81c767a3c833.gif)
-![demo gif2](ezgif-2-2062d55724cf.gif)
 
 ## Project Goals
 1. Learn how to make a video game using Unity along with C#
